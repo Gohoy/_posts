@@ -6,11 +6,11 @@ tag:
  - Mydisk
 ---
 
-## Mydisk项目说明
+# Mydisk项目说明
 
-### 前台方法（controller）
+## 前台方法（controller）
 
-#### 1. minioController：文件的上传、下载、获取等
+### minioController：文件的上传、下载、获取等
 
 * 上传文件：uploadFile: public ResultType uploadFile(@RequestParam String fileName, @RequestParam("file") MultipartFile file)
   
@@ -36,5 +36,5 @@ tag:
   
   * 思路：在后端返回一个可以直接被get的链接，前端模拟点击，可以被预览的文件，如图片视频将在浏览器上直接预览，其他文件将下载。
 
-#### 2.TypeController：文件分类的管理
+### TypeController：文件分类的管理
 

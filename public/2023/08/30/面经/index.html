@@ -6,19 +6,18 @@
   <meta name="keywords" content=" Java , 面经 , 八股文 ">
   <meta name="description" content="Java面经记录 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="使用Let’s Encrypt给网站添加SSL1.安装cerbotsudo apt install certbot python3-certbot-nginx  2.为nginx添加SSLsudo certbot --nginx  3.续订SSL(默认三个月)certbot renew">
+<meta name="description" content="springboot查询数据库字段实践任务描述：在订单管理中增加购票信息界面、 查询条件：赛季名称、赛事名称、票种、姓名、身份证号、购买者、区域、座位、票类型 显示字段：赛季名称、赛事名称、票种、姓名、身份证号、购买者、区域、座位、二维码（限制显示长度20字符）、购票时间、票类型 可效仿订单管理页。 后端实现步骤：查看需要查询的表的字段 表名为t_business_member_ticket  字">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用Let&#39;s Encrypt给网站添加SSL">
-<meta property="og:url" content="https://gohoy.github.io/blog/2023/09/04/%E4%BD%BF%E7%94%A8Let's%20Encrypt%E7%BB%99%E7%BD%91%E7%AB%99%E6%B7%BB%E5%8A%A0SSL/index.html">
+<meta property="og:title" content="springboot查询数据库字段实践">
+<meta property="og:url" content="https://gohoy.github.io/blog/2023/09/05/springboot%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%97%E6%AE%B5%E5%AE%9E%E8%B7%B5/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="使用Let’s Encrypt给网站添加SSL1.安装cerbotsudo apt install certbot python3-certbot-nginx  2.为nginx添加SSLsudo certbot --nginx  3.续订SSL(默认三个月)certbot renew">
+<meta property="og:description" content="springboot查询数据库字段实践任务描述：在订单管理中增加购票信息界面、 查询条件：赛季名称、赛事名称、票种、姓名、身份证号、购买者、区域、座位、票类型 显示字段：赛季名称、赛事名称、票种、姓名、身份证号、购买者、区域、座位、二维码（限制显示长度20字符）、购票时间、票类型 可效仿订单管理页。 后端实现步骤：查看需要查询的表的字段 表名为t_business_member_ticket  字">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-09-04T10:49:32.454Z">
-<meta property="article:modified_time" content="2023-09-04T10:56:01.479Z">
+<meta property="article:published_time" content="2023-09-05T11:23:59.427Z">
+<meta property="article:modified_time" content="2023-09-11T13:29:38.328Z">
 <meta property="article:author" content="Gohoy">
-<meta property="article:tag" content="教程">
-<meta property="article:tag" content="ssl">
-<meta property="article:tag" content="https">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="springboot">
 <meta name="twitter:card" content="summary">
 
 
@@ -118,7 +117,7 @@
     <li>
         <div class="all active" data-rel="All">All
             
-                <small>(18)</small>
+                <small>(19)</small>
             
         </div>
     </li>
@@ -205,7 +204,7 @@
         <div data-rel="Java">
             
             Java
-            <small>(1)</small>
+            <small>(2)</small>
         </div>
         
     </li>
@@ -240,8 +239,8 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="18">
-<input type="hidden" id="yelog_site_word_count" value="24.5k">
+<input type="hidden" id="yelog_site_posts_number" value="19">
+<input type="hidden" id="yelog_site_word_count" value="26.5k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -361,6 +360,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>springboot</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>ssl</a>
             </li>
         
@@ -370,6 +373,15 @@
 
     
     <nav id="title-list-nav">
+        
+        
+        <a  class="All Java "
+           href="/blog/2023/09/05/springboot%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%97%E6%AE%B5%E5%AE%9E%E8%B7%B5/"
+           data-tag="Java,springboot"
+           data-author="" >
+            <span class="post-title" title="springboot查询数据库字段实践">springboot查询数据库字段实践</span>
+            <span class="post-date" title="2023-09-05 19:23:59">2023/09/05</span>
+        </a>
         
         
         <a  class="All 教程 "
@@ -582,12 +594,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2023-08-31 16:42:42'>2023-08-30 14:50</time>
+            Created At : <time class="date" title='Updated At: 2023-09-11 22:56:41'>2023-08-30 14:50</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:9.7k</span>
+        <span>Count:10.9k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -606,7 +618,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9D%A2%E7%BB%8F"><span class="toc-text">面经</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90"><span class="toc-text">1.常用数据结构源码解析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1hashmap"><span class="toc-text">1.1hashmap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2ArrayList"><span class="toc-text">1.2ArrayList</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3LinkedList"><span class="toc-text">1.3LinkedList</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4ConcurrentHashMap"><span class="toc-text">1.4ConcurrentHashMap</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B"><span class="toc-text">2.并发编程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1synchronized%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">2.1synchronized关键字的底层原理是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2CAS%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8C%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="toc-text">2.2CAS的理解和底层实现原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3ConcurrentHashMap%E5%AE%9E%E7%8E%B0%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86"><span class="toc-text">2.3ConcurrentHashMap实现线程安全的底层原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4JDK%E4%B8%AD%E7%9A%84AQS%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="toc-text">2.4JDK中的AQS的实现原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E5%BA%95%E5%B1%82%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-text">2.5线程池的底层工作原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%A0%B8%E5%BF%83%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0"><span class="toc-text">2.5 线程池的核心配置参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6%E5%A6%82%E6%9E%9C%E5%9C%A8%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%97%A0%E7%95%8C%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97%E4%BC%9A%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98"><span class="toc-text">2.6如果在线程池中使用无界阻塞队列会发生什么问题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-6-1%E9%9D%A2%E8%AF%95%E9%A2%981%EF%BC%9A%E5%A6%82%E6%9E%9C%E4%BD%BF%E7%94%A8%E6%97%A0%E7%95%8C%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97%E8%B0%83%E7%94%A8%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%EF%BC%8C%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%BC%82%E5%B8%B8%EF%BC%8C%E4%BC%9A%E4%B8%8D%E4%BC%9A%E5%AF%BC%E8%87%B4%E5%86%85%E5%AD%98%E5%BC%82%E5%B8%B8%E9%A3%99%E5%8D%87"><span class="toc-text">2.6.1面试题1：如果使用无界阻塞队列调用远程服务，远程服务异常，会不会导致内存异常飙升</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7%E7%BA%BF%E7%A8%8B%E6%B1%A0%E9%98%9F%E5%88%97%E6%BB%A1%E4%BA%86%E4%B9%8B%E5%90%8E%EF%BC%8C%E4%BC%9A%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88"><span class="toc-text">2.7线程池队列满了之后，会发生什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-8%E5%A6%82%E6%9E%9C%E6%9C%BA%E5%99%A8%E7%AA%81%E7%84%B6%E5%AE%95%E6%9C%BA%EF%BC%8C%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97%E7%9A%84%E4%BB%BB%E5%8A%A1%E6%80%8E%E4%B9%88%E5%8A%9E"><span class="toc-text">2.8如果机器突然宕机，线程池的阻塞队列的任务怎么办</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E8%B0%88%E8%B0%88%E5%AF%B9Java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">3.谈谈对Java内存模型的理解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1%E5%8F%AF%E8%A7%81%E6%80%A7%E3%80%81%E5%8E%9F%E5%AD%90%E6%80%A7%E3%80%81%E6%9C%89%E5%BA%8F%E6%80%A7"><span class="toc-text">3.1可见性、原子性、有序性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2%E4%BB%8E%E5%BA%95%E5%B1%82%E8%A7%92%E5%BA%A6%E8%81%8Avolatile%E5%85%B3%E9%94%AE%E5%AD%97%E5%8E%9F%E7%90%86"><span class="toc-text">3.2从底层角度聊volatile关键字原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3%E6%8C%87%E4%BB%A4%E9%87%8D%E6%8E%92%E5%92%8Chappens-before%E5%8E%9F%E5%88%99"><span class="toc-text">3.3指令重排和happens-before原则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4volatile%E5%BA%95%E5%B1%82%E5%A6%82%E4%BD%95%E5%9F%BA%E4%BA%8E%E5%86%85%E5%AD%98%E5%B1%8F%E9%9A%9C%E4%BF%9D%E8%AF%81%E5%8F%AF%E8%A7%81%E6%80%A7%E5%92%8C%E6%9C%89%E5%BA%8F%E6%80%A7"><span class="toc-text">3.4volatile底层如何基于内存屏障保证可见性和有序性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Spring"><span class="toc-text">4.Spring</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1Spring%E7%9A%84IOC"><span class="toc-text">4.1Spring的IOC</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-Spring%E7%9A%84AOP"><span class="toc-text">4.2 Spring的AOP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3%E4%BA%86%E8%A7%A3%E8%BF%87cglib%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E5%90%97%EF%BC%8C%E4%BB%96%E5%92%8Cjdk%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">4.3了解过cglib动态代理吗，他和jdk动态代理的区别是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4spring%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E4%BA%8B%E5%8A%A1%E4%BC%A0%E6%92%AD%E6%9C%BA%E5%88%B6%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">4.4spring事务的实现原理是什么，事务传播机制是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-Springboot-%E7%9A%84%E6%A0%B8%E5%BF%83%E6%9E%B6%E6%9E%84"><span class="toc-text">4.5 Springboot 的核心架构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-6-Spring-%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81"><span class="toc-text">4.6 Spring 核心源码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-7-Spring%E4%B8%AD%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F"><span class="toc-text">4.7 Spring中的设计模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-8-SpringMVC%E6%9E%B6%E6%9E%84"><span class="toc-text">4.8 SpringMVC架构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-9-SpringCloud%E6%A0%B8%E5%BF%83%E6%9E%B6%E6%9E%84"><span class="toc-text">4.9 SpringCloud核心架构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-JVM"><span class="toc-text">5.JVM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-JVM%E4%B8%AD%E6%9C%89%E5%93%AA%E5%87%A0%E5%9D%97%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F%EF%BC%8CJava8%E4%B9%8B%E5%90%8E%E5%AF%B9%E5%86%85%E5%AD%98%E5%88%86%E4%BB%A3%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88%E6%94%B9%E8%BF%9B"><span class="toc-text">5.1 JVM中有哪几块内存区域，Java8之后对内存分代做了什么改进</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2JVM%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C%E8%B5%B7%E6%9D%A5%E7%9A%84%EF%BC%8C%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E5%90%84%E7%A7%8D%E5%AF%B9%E8%B1%A1"><span class="toc-text">5.2JVM如何运行起来的，如何创建各种对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-JVM%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%BC%9A%E8%A7%A6%E5%8F%91%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6"><span class="toc-text">5.3 JVM什么时候会触发垃圾回收</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-4-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%AF%B9%E8%B1%A1%E4%BC%9A%E8%BD%AC%E7%A7%BB%E5%88%B0%E8%80%81%E5%B9%B4%E4%BB%A3"><span class="toc-text">5.4 什么时候对象会转移到老年代</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-5%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%99%A8%EF%BC%8C%E8%80%81%E5%B9%B4%E4%BB%A3%E5%A6%82%E4%BD%95%E5%9B%9E%E6%94%B6"><span class="toc-text">5.5常用的垃圾回收器，老年代如何回收</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-6-%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AEjvm%E5%8F%82%E6%95%B0%E7%9A%84%EF%BC%8C%E5%A6%82%E4%BD%95%E6%A3%80%E6%9F%A5jvm%E7%9A%84%E8%BF%90%E8%A1%8C%E6%83%85%E5%86%B5"><span class="toc-text">5.6 生产环境如何设置jvm参数的，如何检查jvm的运行情况</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-7-JVM-GC%E4%BC%98%E5%8C%96"><span class="toc-text">5.7 JVM GC优化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-8-%E5%8F%91%E7%94%9FOOM%E4%B9%8B%E5%90%8E%EF%BC%8C%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E6%8E%92%E6%9F%A5%E5%92%8C%E5%A4%84%E7%90%86%E7%BA%BF%E4%B8%8A%E7%B3%BB%E7%BB%9F%E7%9A%84OOM%E9%97%AE%E9%A2%98"><span class="toc-text">5.8 发生OOM之后，应该如何排查和处理线上系统的OOM问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E7%BD%91%E7%BB%9C"><span class="toc-text">6.网络</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-TCP-IP%E7%9A%84%E5%9B%9B%E5%B1%82%E6%A8%A1%E5%9E%8B%E5%92%8C%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B"><span class="toc-text">6.1 TCP&#x2F;IP的四层模型和七层网络模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2%E6%B5%8F%E8%A7%88%E5%99%A8%E8%AE%BF%E9%97%AEbaidu-com%E4%BC%9A%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88"><span class="toc-text">6.2浏览器访问baidu.com会发生什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B%E7%9A%84%E6%B5%81%E7%A8%8B%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BA%94%E6%AC%A1%E6%88%96%E8%80%85%E4%B8%A4%E6%AC%A1%EF%BC%9F"><span class="toc-text">6.3 TCP三次握手和四次挥手的流程，为什么不是五次或者两次？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-4%E8%AF%B4%E4%B8%80%E4%B8%8Bhttp%E9%95%BF%E8%BF%9E%E6%8E%A5%E7%9A%84%E5%8E%9F%E7%90%86"><span class="toc-text">6.4说一下http长连接的原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-5-https-http-ssl-tsl"><span class="toc-text">6.5 https http+ssl&#x2F;tsl</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-MySQL"><span class="toc-text">7.MySQL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7-1-%E5%BC%95%E6%93%8E%EF%BC%9Amysiam-innodb"><span class="toc-text">7.1 引擎：mysiam innodb</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-Mysql%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%82"><span class="toc-text">7.2 Mysql索引原理和数据结构。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-3-%E7%B4%A2%E5%BC%95%E7%9A%84%E4%BD%BF%E7%94%A8%E8%A7%84%E5%88%99"><span class="toc-text">7.3 索引的使用规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-4%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%87%A0%E4%B8%AA%E7%89%B9%E7%82%B9"><span class="toc-text">7.4事务的几个特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-5%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB"><span class="toc-text">7.5隔离级别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-6%E6%95%B0%E6%8D%AE%E5%BA%93%E9%94%81"><span class="toc-text">7.6数据库锁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-7MySQL%E8%B0%83%E4%BC%98%E7%9A%84%E5%B8%B8%E7%94%A8%E6%89%8B%E6%AE%B5"><span class="toc-text">7.7MySQL调优的常用手段</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-socket"><span class="toc-text">8. socket</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1%E5%92%8C%E7%BA%BF%E7%A8%8B%E5%88%87%E6%8D%A2"><span class="toc-text">9.进程通信和线程切换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#9-1%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1"><span class="toc-text">9.1进程通信</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-2%E7%BA%BF%E7%A8%8B%E5%A6%82%E4%BD%95%E5%88%87%E6%8D%A2"><span class="toc-text">9.2线程如何切换</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-nio%EF%BC%8Cbio%EF%BC%8Caio%E9%83%BD%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%E3%80%82nio%E7%9A%84%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">10.nio，bio，aio都是什么，有什么区别。nio的原理是什么</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#10-1-bio%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86"><span class="toc-text">10.1 bio通信原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-2-nio%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86"><span class="toc-text">10.2 nio通信原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-3-aio"><span class="toc-text">10.3 aio</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-4-%E5%90%8C%E6%AD%A5%E9%98%BB%E5%A1%9E%E3%80%81%E5%90%8C%E6%AD%A5%E9%9D%9E%E9%98%BB%E5%A1%9E%E3%80%81%E5%BC%82%E6%AD%A5%E9%9D%9E%E9%98%BB%E5%A1%9E"><span class="toc-text">10.4 同步阻塞、同步非阻塞、异步非阻塞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-5-BIO-NIO-AIO-demo%E4%BB%A3%E7%A0%81"><span class="toc-text">10.5 BIO NIO AIO demo代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-%E7%BA%BF%E4%B8%8A%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%AE%E9%A2%98"><span class="toc-text">11.线上服务器问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#11-1%E7%BA%BF%E4%B8%8ACPU%E5%8D%A0%E7%94%A8100-%EF%BC%8C%E6%8E%92%E6%9F%A5%E6%AD%A5%E9%AA%A4%EF%BC%9A"><span class="toc-text">11.1线上CPU占用100%，排查步骤：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-2%E5%A6%82%E6%9E%9C%E7%BA%BF%E4%B8%8A%E8%BF%9B%E7%A8%8Bkill%E4%B8%8D%E6%8E%89%E6%80%8E%E4%B9%88%E5%8A%9E"><span class="toc-text">11.2如果线上进程kill不掉怎么办</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-3%E7%A3%81%E7%9B%98%E9%A9%AC%E4%B8%8A%E5%8D%A0%E6%BB%A1%E4%BA%86%E6%80%8E%E4%B9%88%E5%8A%9E"><span class="toc-text">11.3磁盘马上占满了怎么办</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-Java%E8%AF%AD%E8%A8%80%E7%89%B9%E6%80%A7"><span class="toc-text">12.Java语言特性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#12-1%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92"><span class="toc-text">12.1参数传递</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-2%E5%BA%8F%E5%88%97%E5%8C%96"><span class="toc-text">12.2序列化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-3%E6%B3%9B%E5%9E%8B%E5%92%8C%E9%80%9A%E9%85%8D%E7%AC%A6"><span class="toc-text">12.3泛型和通配符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-4%E5%8F%8D%E5%B0%84"><span class="toc-text">12.4反射</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-text">基本操作</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-5%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F"><span class="toc-text">12.5代理模式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E9%9D%99%E6%80%81%E4%BB%A3%E7%90%86%EF%BC%9A"><span class="toc-text">1.静态代理：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86"><span class="toc-text">2.动态代理</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-6-BigDecimal%E5%B8%B8%E8%A7%81%E6%96%B9%E6%B3%95"><span class="toc-text">12.6 BigDecimal常见方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text">}</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#12-7-Unsafe%E7%B1%BB"><span class="toc-text">12.7 Unsafe类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-8SPI%E6%9C%BA%E5%88%B6"><span class="toc-text">12.8SPI机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-9%E8%AF%AD%E6%B3%95%E7%B3%96"><span class="toc-text">12.9语法糖</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9D%A2%E7%BB%8F"><span class="toc-text">面经</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="toc-text">Java基础知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4Java%E6%98%AF%E7%BC%96%E8%AF%91%E5%92%8C%E8%A7%A3%E9%87%8A%E7%9A%84%E8%AF%AD%E8%A8%80"><span class="toc-text">为什么说Java是编译和解释的语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E4%B8%AD%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%83%BD%E8%B0%83%E7%94%A8%E9%9D%9E%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95"><span class="toc-text">静态方法中为什么不能调用非静态方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E8%BD%BD%E5%92%8C%E9%87%8D%E5%86%99"><span class="toc-text">重载和重写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E5%8F%98%E9%95%BF%E5%8F%82%E6%95%B0public-void-test-String-%E2%80%A6args"><span class="toc-text">可变长参数public void test(String …args)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E5%AE%9E%E4%BD%93%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%BC%95%E7%94%A8"><span class="toc-text">对象实体和对象引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E9%BB%98%E8%AE%A4%E6%9C%89%E6%97%A0%E5%8F%82%E6%9E%84%E9%80%A0%EF%BC%8C%E4%BD%86%E5%88%9B%E5%BB%BA%E6%9C%89%E5%8F%82%E6%9E%84%E9%80%A0%E5%90%8E%E8%A6%81%E6%89%8B%E5%8A%A8%E5%88%9B%E5%BB%BA%E6%97%A0%E5%8F%82%E6%9E%84%E9%80%A0%E3%80%82"><span class="toc-text">对象默认有无参构造，但创建有参构造后要手动创建无参构造。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E6%80%81"><span class="toc-text">多态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A5%E5%8F%A3%E5%92%8C%E6%8A%BD%E8%B1%A1%E7%B1%BB%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">接口和抽象类的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%B1%E6%8B%B7%E8%B4%9D%E5%92%8C%E6%B5%85%E6%8B%B7%E8%B4%9D"><span class="toc-text">深拷贝和浅拷贝</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Object-%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">Object 的常用方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String-StringBuffer-StringBuilder-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">String StringBuffer StringBuilder 的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String%E6%8B%BC%E6%8E%A5%E3%80%81%E8%B5%8B%E5%80%BC%E5%92%8Cintern%E6%96%B9%E6%B3%95"><span class="toc-text">String拼接、赋值和intern方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E9%87%8F%E6%B1%A0"><span class="toc-text">字符串常量池</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90"><span class="toc-text">常用数据结构源码解析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#hashmap"><span class="toc-text">hashmap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ArrayList"><span class="toc-text">ArrayList</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LinkedList"><span class="toc-text">LinkedList</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ConcurrentHashMap"><span class="toc-text">ConcurrentHashMap</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B"><span class="toc-text">并发编程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#synchronized%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">synchronized关键字的底层原理是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CAS%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8C%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="toc-text">CAS的理解和底层实现原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ConcurrentHashMap%E5%AE%9E%E7%8E%B0%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86"><span class="toc-text">ConcurrentHashMap实现线程安全的底层原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JDK%E4%B8%AD%E7%9A%84AQS%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="toc-text">JDK中的AQS的实现原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E5%BA%95%E5%B1%82%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-text">线程池的底层工作原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%A0%B8%E5%BF%83%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0"><span class="toc-text">线程池的核心配置参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E5%9C%A8%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%97%A0%E7%95%8C%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97%E4%BC%9A%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98"><span class="toc-text">如果在线程池中使用无界阻塞队列会发生什么问题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9D%A2%E8%AF%95%E9%A2%981%EF%BC%9A%E5%A6%82%E6%9E%9C%E4%BD%BF%E7%94%A8%E6%97%A0%E7%95%8C%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97%E8%B0%83%E7%94%A8%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%EF%BC%8C%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%BC%82%E5%B8%B8%EF%BC%8C%E4%BC%9A%E4%B8%8D%E4%BC%9A%E5%AF%BC%E8%87%B4%E5%86%85%E5%AD%98%E5%BC%82%E5%B8%B8%E9%A3%99%E5%8D%87"><span class="toc-text">面试题1：如果使用无界阻塞队列调用远程服务，远程服务异常，会不会导致内存异常飙升</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E9%98%9F%E5%88%97%E6%BB%A1%E4%BA%86%E4%B9%8B%E5%90%8E%EF%BC%8C%E4%BC%9A%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88"><span class="toc-text">线程池队列满了之后，会发生什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E6%9C%BA%E5%99%A8%E7%AA%81%E7%84%B6%E5%AE%95%E6%9C%BA%EF%BC%8C%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97%E7%9A%84%E4%BB%BB%E5%8A%A1%E6%80%8E%E4%B9%88%E5%8A%9E"><span class="toc-text">如果机器突然宕机，线程池的阻塞队列的任务怎么办</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%88%E8%B0%88%E5%AF%B9Java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">谈谈对Java内存模型的理解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E8%A7%81%E6%80%A7%E3%80%81%E5%8E%9F%E5%AD%90%E6%80%A7%E3%80%81%E6%9C%89%E5%BA%8F%E6%80%A7"><span class="toc-text">可见性、原子性、有序性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8E%E5%BA%95%E5%B1%82%E8%A7%92%E5%BA%A6%E8%81%8Avolatile%E5%85%B3%E9%94%AE%E5%AD%97%E5%8E%9F%E7%90%86"><span class="toc-text">从底层角度聊volatile关键字原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%87%E4%BB%A4%E9%87%8D%E6%8E%92%E5%92%8Chappens-before%E5%8E%9F%E5%88%99"><span class="toc-text">指令重排和happens-before原则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#volatile%E5%BA%95%E5%B1%82%E5%A6%82%E4%BD%95%E5%9F%BA%E4%BA%8E%E5%86%85%E5%AD%98%E5%B1%8F%E9%9A%9C%E4%BF%9D%E8%AF%81%E5%8F%AF%E8%A7%81%E6%80%A7%E5%92%8C%E6%9C%89%E5%BA%8F%E6%80%A7"><span class="toc-text">volatile底层如何基于内存屏障保证可见性和有序性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spring"><span class="toc-text">Spring</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Spring%E7%9A%84IOC"><span class="toc-text">Spring的IOC</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Spring%E7%9A%84AOP"><span class="toc-text">Spring的AOP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%86%E8%A7%A3%E8%BF%87cglib%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E5%90%97%EF%BC%8C%E4%BB%96%E5%92%8Cjdk%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">了解过cglib动态代理吗，他和jdk动态代理的区别是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#spring%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E4%BA%8B%E5%8A%A1%E4%BC%A0%E6%92%AD%E6%9C%BA%E5%88%B6%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">spring事务的实现原理是什么，事务传播机制是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Springboot-%E7%9A%84%E6%A0%B8%E5%BF%83%E6%9E%B6%E6%9E%84"><span class="toc-text">Springboot 的核心架构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Spring-%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81"><span class="toc-text">Spring 核心源码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Spring%E4%B8%AD%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F"><span class="toc-text">Spring中的设计模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SpringMVC%E6%9E%B6%E6%9E%84"><span class="toc-text">SpringMVC架构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SpringCloud%E6%A0%B8%E5%BF%83%E6%9E%B6%E6%9E%84"><span class="toc-text">SpringCloud核心架构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JVM"><span class="toc-text">JVM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#JVM%E4%B8%AD%E6%9C%89%E5%93%AA%E5%87%A0%E5%9D%97%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F%EF%BC%8CJava8%E4%B9%8B%E5%90%8E%E5%AF%B9%E5%86%85%E5%AD%98%E5%88%86%E4%BB%A3%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88%E6%94%B9%E8%BF%9B"><span class="toc-text">JVM中有哪几块内存区域，Java8之后对内存分代做了什么改进</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JVM%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C%E8%B5%B7%E6%9D%A5%E7%9A%84%EF%BC%8C%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E5%90%84%E7%A7%8D%E5%AF%B9%E8%B1%A1"><span class="toc-text">JVM如何运行起来的，如何创建各种对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JVM%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%BC%9A%E8%A7%A6%E5%8F%91%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6"><span class="toc-text">JVM什么时候会触发垃圾回收</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%AF%B9%E8%B1%A1%E4%BC%9A%E8%BD%AC%E7%A7%BB%E5%88%B0%E8%80%81%E5%B9%B4%E4%BB%A3"><span class="toc-text">什么时候对象会转移到老年代</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%99%A8%EF%BC%8C%E8%80%81%E5%B9%B4%E4%BB%A3%E5%A6%82%E4%BD%95%E5%9B%9E%E6%94%B6"><span class="toc-text">常用的垃圾回收器，老年代如何回收</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AEjvm%E5%8F%82%E6%95%B0%E7%9A%84%EF%BC%8C%E5%A6%82%E4%BD%95%E6%A3%80%E6%9F%A5jvm%E7%9A%84%E8%BF%90%E8%A1%8C%E6%83%85%E5%86%B5"><span class="toc-text">生产环境如何设置jvm参数的，如何检查jvm的运行情况</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JVM-GC%E4%BC%98%E5%8C%96"><span class="toc-text">JVM GC优化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%91%E7%94%9FOOM%E4%B9%8B%E5%90%8E%EF%BC%8C%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E6%8E%92%E6%9F%A5%E5%92%8C%E5%A4%84%E7%90%86%E7%BA%BF%E4%B8%8A%E7%B3%BB%E7%BB%9F%E7%9A%84OOM%E9%97%AE%E9%A2%98"><span class="toc-text">发生OOM之后，应该如何排查和处理线上系统的OOM问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C"><span class="toc-text">网络</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP-IP%E7%9A%84%E5%9B%9B%E5%B1%82%E6%A8%A1%E5%9E%8B%E5%92%8C%E4%B8%83%E5%B1%82%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B"><span class="toc-text">TCP&#x2F;IP的四层模型和七层网络模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E8%AE%BF%E9%97%AEbaidu-com%E4%BC%9A%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88"><span class="toc-text">浏览器访问baidu.com会发生什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E5%92%8C%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B%E7%9A%84%E6%B5%81%E7%A8%8B%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BA%94%E6%AC%A1%E6%88%96%E8%80%85%E4%B8%A4%E6%AC%A1%EF%BC%9F"><span class="toc-text">TCP三次握手和四次挥手的流程，为什么不是五次或者两次？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E4%B8%80%E4%B8%8Bhttp%E9%95%BF%E8%BF%9E%E6%8E%A5%E7%9A%84%E5%8E%9F%E7%90%86"><span class="toc-text">说一下http长连接的原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#https-http-ssl-tsl"><span class="toc-text">https http+ssl&#x2F;tsl</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MySQL"><span class="toc-text">MySQL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E6%93%8E%EF%BC%9Amysiam-innodb"><span class="toc-text">引擎：mysiam innodb</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mysql%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%82"><span class="toc-text">Mysql索引原理和数据结构。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E7%9A%84%E4%BD%BF%E7%94%A8%E8%A7%84%E5%88%99"><span class="toc-text">索引的使用规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%87%A0%E4%B8%AA%E7%89%B9%E7%82%B9"><span class="toc-text">事务的几个特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB"><span class="toc-text">隔离级别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E9%94%81"><span class="toc-text">数据库锁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MySQL%E8%B0%83%E4%BC%98%E7%9A%84%E5%B8%B8%E7%94%A8%E6%89%8B%E6%AE%B5"><span class="toc-text">MySQL调优的常用手段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#E-R%E5%9B%BE"><span class="toc-text">E-R图</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#socket"><span class="toc-text">socket</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1%E5%92%8C%E7%BA%BF%E7%A8%8B%E5%88%87%E6%8D%A2"><span class="toc-text">进程通信和线程切换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1"><span class="toc-text">进程通信</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E5%A6%82%E4%BD%95%E5%88%87%E6%8D%A2"><span class="toc-text">线程如何切换</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nio%EF%BC%8Cbio%EF%BC%8Caio%E9%83%BD%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%8C%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%E3%80%82nio%E7%9A%84%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">nio，bio，aio都是什么，有什么区别。nio的原理是什么</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#bio%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86"><span class="toc-text">bio通信原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nio%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86"><span class="toc-text">nio通信原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#aio"><span class="toc-text">aio</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5%E9%98%BB%E5%A1%9E%E3%80%81%E5%90%8C%E6%AD%A5%E9%9D%9E%E9%98%BB%E5%A1%9E%E3%80%81%E5%BC%82%E6%AD%A5%E9%9D%9E%E9%98%BB%E5%A1%9E"><span class="toc-text">同步阻塞、同步非阻塞、异步非阻塞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BIO-NIO-AIO-demo%E4%BB%A3%E7%A0%81"><span class="toc-text">BIO NIO AIO demo代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E4%B8%8A%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%AE%E9%A2%98"><span class="toc-text">线上服务器问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E4%B8%8ACPU%E5%8D%A0%E7%94%A8100-%EF%BC%8C%E6%8E%92%E6%9F%A5%E6%AD%A5%E9%AA%A4%EF%BC%9A"><span class="toc-text">线上CPU占用100%，排查步骤：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E7%BA%BF%E4%B8%8A%E8%BF%9B%E7%A8%8Bkill%E4%B8%8D%E6%8E%89%E6%80%8E%E4%B9%88%E5%8A%9E"><span class="toc-text">如果线上进程kill不掉怎么办</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A3%81%E7%9B%98%E9%A9%AC%E4%B8%8A%E5%8D%A0%E6%BB%A1%E4%BA%86%E6%80%8E%E4%B9%88%E5%8A%9E"><span class="toc-text">磁盘马上占满了怎么办</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E8%AF%AD%E8%A8%80%E7%89%B9%E6%80%A7"><span class="toc-text">Java语言特性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92"><span class="toc-text">参数传递</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%8F%E5%88%97%E5%8C%96"><span class="toc-text">序列化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B%E5%92%8C%E9%80%9A%E9%85%8D%E7%AC%A6"><span class="toc-text">泛型和通配符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8D%E5%B0%84"><span class="toc-text">反射</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-text">基本操作</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F"><span class="toc-text">代理模式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E9%9D%99%E6%80%81%E4%BB%A3%E7%90%86%EF%BC%9A"><span class="toc-text">1.静态代理：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86"><span class="toc-text">2.动态代理</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BigDecimal%E5%B8%B8%E8%A7%81%E6%96%B9%E6%B3%95"><span class="toc-text">BigDecimal常见方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unsafe%E7%B1%BB"><span class="toc-text">Unsafe类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SPI%E6%9C%BA%E5%88%B6"><span class="toc-text">SPI机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E6%B3%95%E7%B3%96"><span class="toc-text">语法糖</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -622,7 +634,97 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="面经"><a href="#面经" class="headerlink" title="面经"></a>面经</h1><h2 id="1-常用数据结构源码解析"><a href="#1-常用数据结构源码解析" class="headerlink" title="1.常用数据结构源码解析"></a>1.常用数据结构源码解析</h2><h3 id="1-1hashmap"><a href="#1-1hashmap" class="headerlink" title="1.1hashmap"></a>1.1hashmap</h3><ul>
+        <h1 id="面经"><a href="#面经" class="headerlink" title="面经"></a>面经</h1><h2 id="Java基础知识"><a href="#Java基础知识" class="headerlink" title="Java基础知识"></a>Java基础知识</h2><h3 id="为什么说Java是编译和解释的语言"><a href="#为什么说Java是编译和解释的语言" class="headerlink" title="为什么说Java是编译和解释的语言"></a>为什么说Java是编译和解释的语言</h3><p>Java需要把代码编译成.class的字节码文件，然后再解释成机器码。</p>
+<h3 id="静态方法中为什么不能调用非静态方法"><a href="#静态方法中为什么不能调用非静态方法" class="headerlink" title="静态方法中为什么不能调用非静态方法"></a>静态方法中为什么不能调用非静态方法</h3><p>因为静态方法在类创建的时候生成，非静态方法在实例化对象之后才生成。</p>
+<h3 id="重载和重写"><a href="#重载和重写" class="headerlink" title="重载和重写"></a>重载和重写</h3><p>重载：同方法名，不同参数</p>
+<p>重写：子类重写父类的方法，方法名参数相同，构造方法无法重写</p>
+<h3 id="可变长参数public-void-test-String-…args"><a href="#可变长参数public-void-test-String-…args" class="headerlink" title="可变长参数public void test(String …args)"></a>可变长参数public void test(String …args)</h3><p>可以接收不同长度的参数，重载的时候优先匹配固定长度参数的方法。</p>
+<h3 id="对象实体和对象引用"><a href="#对象实体和对象引用" class="headerlink" title="对象实体和对象引用"></a>对象实体和对象引用</h3><p>new 来创建一个对象实体，一个对象实体可以有多个对象引用。一个对象引用可以指向一个对象实体。</p>
+<p>对象实体存在堆内存中（类和对象都存放在堆内存中）</p>
+<p>对象引用存放在栈内存中</p>
+<h3 id="对象默认有无参构造，但创建有参构造后要手动创建无参构造。"><a href="#对象默认有无参构造，但创建有参构造后要手动创建无参构造。" class="headerlink" title="对象默认有无参构造，但创建有参构造后要手动创建无参构造。"></a>对象默认有无参构造，但创建有参构造后要手动创建无参构造。</h3><h3 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h3><p>子类在调用父类的方法的时候，只有在运行的时候，才知道调用的是哪个方法（父类的还是子类的），这个方法具有多态性</p>
+<h3 id="接口和抽象类的区别"><a href="#接口和抽象类的区别" class="headerlink" title="接口和抽象类的区别"></a>接口和抽象类的区别</h3><ul>
+<li>相同点：<ul>
+<li>都不能被实例化</li>
+<li>都可以包含抽象方法</li>
+<li>都可以有默认实现的方法，接口中可以定义default方法来实现</li>
+</ul>
+</li>
+<li>不同点<ul>
+<li>接口主要是对对象的约束，约束对象的行为（实现接口的方法）</li>
+<li>抽象类主要是代码的复用性的规定</li>
+<li>一个类只可以继承一个类，但可以实现多个接口</li>
+<li>接口中 的成员变量只能是public static final 类型，有初值，不可变</li>
+<li>抽象类中的成员变量默认为default，可在子类中重新定义和赋值</li>
+</ul>
+</li>
+</ul>
+<h3 id="深拷贝和浅拷贝"><a href="#深拷贝和浅拷贝" class="headerlink" title="深拷贝和浅拷贝"></a>深拷贝和浅拷贝</h3><p>浅拷贝：在对上创建一个新对象，如果被拷贝的是引用类型，则会直接复制它引用的地址</p>
+<p>深拷贝：复制整个对象，包含内部对象</p>
+<h3 id="Object-的常用方法"><a href="#Object-的常用方法" class="headerlink" title="Object 的常用方法"></a>Object 的常用方法</h3><details><summary>点击展开代码</summary><pre><code>/**
+ * native 方法，用于返回当前运行时对象的 Class 对象，使用了 final 关键字修饰，故不允许子类重写。
+ */
+public final native Class<?> getClass()
+/**
+ * native 方法，用于返回对象的哈希码，主要使用在哈希表中，比如 JDK 中的HashMap。
+ */
+public native int hashCode()
+/**
+ * 用于比较 2 个对象的内存地址是否相等，String 类对该方法进行了重写以用于比较字符串的值是否相等。
+ */
+public boolean equals(Object obj)
+/**
+ * native 方法，用于创建并返回当前对象的一份拷贝。
+ */
+protected native Object clone() throws CloneNotSupportedException
+/**
+ * 返回类的名字实例的哈希码的 16 进制的字符串。建议 Object 所有的子类都重写这个方法。
+ */
+public String toString()
+/**
+ * native 方法，并且不能重写。唤醒一个在此对象监视器上等待的线程(监视器相当于就是锁的概念)。如果有多个线程在等待只会任意唤醒一个。
+ */
+public final native void notify()
+/**
+ * native 方法，并且不能重写。跟 notify 一样，唯一的区别就是会唤醒在此对象监视器上等待的所有线程，而不是一个线程。
+ */
+public final native void notifyAll()
+/**
+ * native方法，并且不能重写。暂停线程的执行。注意：sleep 方法没有释放锁，而 wait 方法释放了锁 ，timeout 是等待时间。
+ */
+public final native void wait(long timeout) throws InterruptedException
+/**
+ * 多了 nanos 参数，这个参数表示额外时间（以纳秒为单位，范围是 0-999999）。 所以超时的时间还需要加上 nanos 纳秒。。
+ */
+public final void wait(long timeout, int nanos) throws InterruptedException
+/**
+ * 跟之前的2个wait方法一样，只不过该方法一直等待，没有超时时间这个概念
+ */
+public final void wait() throws InterruptedException
+/**
+ * 实例被垃圾回收器回收的时候触发的操作
+ */
+protected void finalize() throws Throwable &#123; &#125;</code></pre></details>
+
+<p>hashcode 和 equals 都是判断对象是否相同的方法</p>
+<p>hashcode 可能会碰撞，equals 是比较地址但效率较低</p>
+<p>重写equals也应当重写hashcode方法。</p>
+<h3 id="String-StringBuffer-StringBuilder-的区别"><a href="#String-StringBuffer-StringBuilder-的区别" class="headerlink" title="String StringBuffer StringBuilder 的区别"></a>String StringBuffer StringBuilder 的区别</h3><ul>
+<li><p>String 对象不可变，String a &#x3D; “test”;  a &#x3D; “test1” 。更改a的值的时候，是创建了一个新的String对象，将地址赋给a。是线程安全的</p>
+</li>
+<li><p>StringBuffer 和 StringBuilder 更改值，不用新建对象。</p>
+</li>
+<li><p>StringBuffer 使用同步锁保证线程安全</p>
+</li>
+<li><p>StringBuilder 是线程不安全的，效率比StringBUffer快10%-15%</p>
+</li>
+</ul>
+<h3 id="String拼接、赋值和intern方法"><a href="#String拼接、赋值和intern方法" class="headerlink" title="String拼接、赋值和intern方法"></a>String拼接、赋值和intern方法</h3><ul>
+<li>在Java9之前，String 用加号连接的方法是使用StringBuilder.append().toString()方法构建的。在之后更新了方法，可以放心使用+连接，性能也不错</li>
+<li>String s &#x3D; new String(“abc”); 这段代码可能会创建 1-2 个字符串对象。 先在字符串常量池创建一个字符串对象abc（如果已存在则不需要再创建），然后复制一份到堆内存中。</li>
+<li>String intern 方法：将引用保存到字符串常量池中（如果已有则不再保存），并且返回这个对象</li>
+</ul>
+<h3 id="字符串常量池"><a href="#字符串常量池" class="headerlink" title="字符串常量池"></a>字符串常量池</h3><h2 id="常用数据结构源码解析"><a href="#常用数据结构源码解析" class="headerlink" title="常用数据结构源码解析"></a>常用数据结构源码解析</h2><h3 id="hashmap"><a href="#hashmap" class="headerlink" title="hashmap"></a>hashmap</h3><ul>
 <li><p>底层是数组+链表+红黑树，非线程安全</p>
 </li>
 <li><p>可存储null的key和value</p>
@@ -671,7 +773,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="1-2ArrayList"><a href="#1-2ArrayList" class="headerlink" title="1.2ArrayList"></a>1.2ArrayList</h3><ul>
+<h3 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h3><ul>
 <li><p><code>ArrayList</code> 继承于 <code>AbstractList</code> ，实现了 <code>List</code>, <code>RandomAccess</code>, <code>Cloneable</code>, <code>java.io.Serializable</code> 这些接口。线程不安全。</p>
 <ul>
 <li><code>List</code> : 表明它是一个列表，支持添加、删除、查找等操作，并且可以通过下标进行访问。</li>
@@ -696,7 +798,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="1-3LinkedList"><a href="#1-3LinkedList" class="headerlink" title="1.3LinkedList"></a>1.3LinkedList</h3><ul>
+<h3 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h3><ul>
 <li><code>LinkedList</code> 继承了 <code>AbstractSequentialList</code> ，而 <code>AbstractSequentialList</code> 又继承于 <code>AbstractList</code> 。</li>
 <li><code>LinkedList</code> 实现了<code>List</code>,<code>Deque</code>,<code>Cloneable</code>,<code>Seralizable</code><ul>
 <li><code>Deque</code>：表明它具有双端队列特性，便于两端插入和删除</li>
@@ -708,12 +810,12 @@
 <li>遍历常用for-each</li>
 <li>基本上不用LinkedList，都用ArrayList，性能一般更好一些</li>
 </ul>
-<h3 id="1-4ConcurrentHashMap"><a href="#1-4ConcurrentHashMap" class="headerlink" title="1.4ConcurrentHashMap"></a>1.4ConcurrentHashMap</h3><h2 id="2-并发编程"><a href="#2-并发编程" class="headerlink" title="2.并发编程"></a>2.并发编程</h2><h3 id="2-1synchronized关键字的底层原理是什么"><a href="#2-1synchronized关键字的底层原理是什么" class="headerlink" title="2.1synchronized关键字的底层原理是什么"></a>2.1synchronized关键字的底层原理是什么</h3><p>2.1.1synchronized是做什么的</p>
+<h3 id="ConcurrentHashMap"><a href="#ConcurrentHashMap" class="headerlink" title="ConcurrentHashMap"></a>ConcurrentHashMap</h3><h2 id="并发编程"><a href="#并发编程" class="headerlink" title="并发编程"></a>并发编程</h2><h3 id="synchronized关键字的底层原理是什么"><a href="#synchronized关键字的底层原理是什么" class="headerlink" title="synchronized关键字的底层原理是什么"></a>synchronized关键字的底层原理是什么</h3><p>2.1.1synchronized是做什么的</p>
 <p><strong>给线程加锁</strong>，加锁目标是一个类或一个对象。</p>
 <p>2.1.2实现原理</p>
 <p>加锁指令：monitorenter（加锁） monitorexit（释放锁）</p>
 <p>一个对象或类关联有一个monitor（计数器：正在使用的线程数，<strong>类似信号量</strong>）</p>
-<h3 id="2-2CAS的理解和底层实现原理"><a href="#2-2CAS的理解和底层实现原理" class="headerlink" title="2.2CAS的理解和底层实现原理"></a>2.2CAS的理解和底层实现原理</h3><p>多个线程要访问同一个数据会出现并发安全问题。</p>
+<h3 id="CAS的理解和底层实现原理"><a href="#CAS的理解和底层实现原理" class="headerlink" title="CAS的理解和底层实现原理"></a>CAS的理解和底层实现原理</h3><p>多个线程要访问同一个数据会出现并发安全问题。</p>
 <p><code>AtomicInterger</code>并发包的原子类，使用CAS实现。</p>
 <p>2.2.1线程操作AtomicInterger基本流程：</p>
 <p>线程1想要修改值，会</p>
@@ -726,14 +828,14 @@
 <p>2.2.2CAS</p>
 <p>CAS：compare and set</p>
 <p>在硬件级别保是原子操作，同一时间只有一个线程可以执行CAS。</p>
-<h3 id="2-3ConcurrentHashMap实现线程安全的底层原理"><a href="#2-3ConcurrentHashMap实现线程安全的底层原理" class="headerlink" title="2.3ConcurrentHashMap实现线程安全的底层原理"></a>2.3ConcurrentHashMap实现线程安全的底层原理</h3><p>2.3.1对hashmap简单的操作，不需要进行synchronized</p>
+<h3 id="ConcurrentHashMap实现线程安全的底层原理"><a href="#ConcurrentHashMap实现线程安全的底层原理" class="headerlink" title="ConcurrentHashMap实现线程安全的底层原理"></a>ConcurrentHashMap实现线程安全的底层原理</h3><p>2.3.1对hashmap简单的操作，不需要进行synchronized</p>
 <p>一般的操作都是hashmap底层数组的不同的元素进行操作，无需加锁</p>
 <p>ConcurrentHashmap默认实现了线程安全。</p>
 <p>2.3.2在jdk1.7以及之前，对ConcurrentHashmap底层的数组分段加锁。</p>
 <p><strong>一段数组加一个锁</strong>，如果操作的是不同不同段的数组，则不互相影响</p>
 <p>2.3.3在jdk1.8以及之后，不再数组分段，<strong>对数组中每一个元素都加了一个锁</strong>。</p>
 <p>将锁的粒度细化。</p>
-<h3 id="2-4JDK中的AQS的实现原理"><a href="#2-4JDK中的AQS的实现原理" class="headerlink" title="2.4JDK中的AQS的实现原理"></a>2.4JDK中的AQS的实现原理</h3><p><code>ReentrantLock </code>类底层是AQS（Abstract Queue Synchronizer）</p>
+<h3 id="JDK中的AQS的实现原理"><a href="#JDK中的AQS的实现原理" class="headerlink" title="JDK中的AQS的实现原理"></a>JDK中的AQS的实现原理</h3><p><code>ReentrantLock </code>类底层是AQS（Abstract Queue Synchronizer）</p>
 <p>可以使用这个类生成一个锁lock，可以进行lock.lock() lock.unlock()实现互斥。</p>
 <p>2.4.1 AQS会有一个等待队列，存储没有得到锁的线程，待锁释放后，按顺序为等待队列的线程提供锁</p>
 <img src="http://gohoy.top/i/2023/07/31/ui6crn-1.png" alt="image-20230731160209376" style="zoom:80%;" />
@@ -749,7 +851,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="2-5线程池的底层工作原理"><a href="#2-5线程池的底层工作原理" class="headerlink" title="2.5线程池的底层工作原理"></a>2.5线程池的底层工作原理</h3><p>2.5.1线程池：提供一定量的线程，线程执行完成任务后，不销毁自己，等待下一次任务：</p>
+<h3 id="线程池的底层工作原理"><a href="#线程池的底层工作原理" class="headerlink" title="线程池的底层工作原理"></a>线程池的底层工作原理</h3><p>2.5.1线程池：提供一定量的线程，线程执行完成任务后，不销毁自己，等待下一次任务：</p>
 <p><strong>避免重复创建和销毁线程，造成性能浪费</strong></p>
 <p>创建线程池：</p>
 <pre><code class="java">ExecutorService threadPool = Executor.newFixedThreadPool(10)  //(corePoolSize = 10)
@@ -763,7 +865,7 @@ threadPool.submit(new Callable() &#123;
 <li>如果满了，则放在任务队列中。</li>
 </ul>
 <p>当线程完成自己的任务的时候，会去任务队列中获取任务，如果没有任务，会阻塞，不会销毁。</p>
-<h3 id="2-5-线程池的核心配置参数"><a href="#2-5-线程池的核心配置参数" class="headerlink" title="2.5 线程池的核心配置参数"></a>2.5 线程池的核心配置参数</h3><p>代表线程池的类是ThreadPoolExecutor</p>
+<h3 id="线程池的核心配置参数"><a href="#线程池的核心配置参数" class="headerlink" title="线程池的核心配置参数"></a>线程池的核心配置参数</h3><p>代表线程池的类是ThreadPoolExecutor</p>
 <pre><code class="java">return new ThreadPoolExecutor(nThreads,nThreads,0L,TimeUnit.MILLISECONDS,new LinkedBlockingQueue&lt;Runnable&gt;())
 </code></pre>
 <ul>
@@ -785,14 +887,14 @@ threadPool.submit(new Callable() &#123;
 </li>
 </ul>
 <p>如果额外线程也满了，会报异常。可以自定义RejectedExecutionHandler策略来应对这种情况：持久化被reject的任务，等负载低了再加载执行。</p>
-<h3 id="2-6如果在线程池中使用无界阻塞队列会发生什么问题"><a href="#2-6如果在线程池中使用无界阻塞队列会发生什么问题" class="headerlink" title="2.6如果在线程池中使用无界阻塞队列会发生什么问题"></a>2.6如果在线程池中使用无界阻塞队列会发生什么问题</h3><h4 id="2-6-1面试题1：如果使用无界阻塞队列调用远程服务，远程服务异常，会不会导致内存异常飙升"><a href="#2-6-1面试题1：如果使用无界阻塞队列调用远程服务，远程服务异常，会不会导致内存异常飙升" class="headerlink" title="2.6.1面试题1：如果使用无界阻塞队列调用远程服务，远程服务异常，会不会导致内存异常飙升"></a>2.6.1面试题1：如果使用无界阻塞队列调用远程服务，远程服务异常，会不会导致内存异常飙升</h4><p>调用超时，队列变得越来越大，内存会飙升，可能会导致OOM。</p>
-<h3 id="2-7线程池队列满了之后，会发生什么"><a href="#2-7线程池队列满了之后，会发生什么" class="headerlink" title="2.7线程池队列满了之后，会发生什么"></a>2.7线程池队列满了之后，会发生什么</h3><ul>
+<h3 id="如果在线程池中使用无界阻塞队列会发生什么问题"><a href="#如果在线程池中使用无界阻塞队列会发生什么问题" class="headerlink" title="如果在线程池中使用无界阻塞队列会发生什么问题"></a>如果在线程池中使用无界阻塞队列会发生什么问题</h3><h4 id="面试题1：如果使用无界阻塞队列调用远程服务，远程服务异常，会不会导致内存异常飙升"><a href="#面试题1：如果使用无界阻塞队列调用远程服务，远程服务异常，会不会导致内存异常飙升" class="headerlink" title="面试题1：如果使用无界阻塞队列调用远程服务，远程服务异常，会不会导致内存异常飙升"></a>面试题1：如果使用无界阻塞队列调用远程服务，远程服务异常，会不会导致内存异常飙升</h4><p>调用超时，队列变得越来越大，内存会飙升，可能会导致OOM。</p>
+<h3 id="线程池队列满了之后，会发生什么"><a href="#线程池队列满了之后，会发生什么" class="headerlink" title="线程池队列满了之后，会发生什么"></a>线程池队列满了之后，会发生什么</h3><ul>
 <li>如果给maximumPoolSize设置太大，可能会导致系统崩溃。因为线程会占用一定内存，也会增加cpu负载。</li>
 <li>如果给maximumPoolSize设置太小，可能会导致任务reject。</li>
 </ul>
-<h3 id="2-8如果机器突然宕机，线程池的阻塞队列的任务怎么办"><a href="#2-8如果机器突然宕机，线程池的阻塞队列的任务怎么办" class="headerlink" title="2.8如果机器突然宕机，线程池的阻塞队列的任务怎么办"></a>2.8如果机器突然宕机，线程池的阻塞队列的任务怎么办</h3><p><strong>都会丢失</strong></p>
+<h3 id="如果机器突然宕机，线程池的阻塞队列的任务怎么办"><a href="#如果机器突然宕机，线程池的阻塞队列的任务怎么办" class="headerlink" title="如果机器突然宕机，线程池的阻塞队列的任务怎么办"></a>如果机器突然宕机，线程池的阻塞队列的任务怎么办</h3><p><strong>都会丢失</strong></p>
 <p>解决办法：在数据库对任务信息进行持久化。</p>
-<h2 id="3-谈谈对Java内存模型的理解"><a href="#3-谈谈对Java内存模型的理解" class="headerlink" title="3.谈谈对Java内存模型的理解"></a>3.谈谈对Java内存模型的理解</h2><pre><code class="java">public class HelloWorld &#123;
+<h2 id="谈谈对Java内存模型的理解"><a href="#谈谈对Java内存模型的理解" class="headerlink" title="谈谈对Java内存模型的理解"></a>谈谈对Java内存模型的理解</h2><pre><code class="java">public class HelloWorld &#123;
     private int data;
     public void increment()&#123;
         data++;
@@ -818,7 +920,7 @@ new Thread()&#123;
 <p>常量操作：read load use assign store write</p>
 <img src="http://gohoy.top/i/2023/07/31/ui6jyh-1.png" alt="image-20230731165920298" style="zoom: 80%;" />
 
-<h3 id="3-1可见性、原子性、有序性"><a href="#3-1可见性、原子性、有序性" class="headerlink" title="3.1可见性、原子性、有序性"></a>3.1可见性、原子性、有序性</h3><ul>
+<h3 id="可见性、原子性、有序性"><a href="#可见性、原子性、有序性" class="headerlink" title="可见性、原子性、有序性"></a>可见性、原子性、有序性</h3><ul>
 <li>可见性<ul>
 <li>没有可见性：线程1更新了数据，但是线程2看到的还是工作内存中旧的数据</li>
 <li>有可见性：数据更新之后，线程1会强制使线程2重新读取修改后的数据。</li>
@@ -833,7 +935,7 @@ new Thread()&#123;
 </ul>
 </li>
 </ul>
-<h3 id="3-2从底层角度聊volatile关键字原理"><a href="#3-2从底层角度聊volatile关键字原理" class="headerlink" title="3.2从底层角度聊volatile关键字原理"></a>3.2从底层角度聊volatile关键字原理</h3><p>volatile：用来解决<strong>可见性和有序性</strong>，对原子性的保证很有限。（对64位的long型有一定原子性保证）</p>
+<h3 id="从底层角度聊volatile关键字原理"><a href="#从底层角度聊volatile关键字原理" class="headerlink" title="从底层角度聊volatile关键字原理"></a>从底层角度聊volatile关键字原理</h3><p>volatile：用来解决<strong>可见性和有序性</strong>，对原子性的保证很有限。（对64位的long型有一定原子性保证）</p>
 <ul>
 <li>实现可见性<ul>
 <li><strong>当加上volatile的变量改变时，会使其他线程工作内存的过期变量失效。</strong></li>
@@ -844,7 +946,7 @@ new Thread()&#123;
 </ul>
 </li>
 </ul>
-<h3 id="3-3指令重排和happens-before原则"><a href="#3-3指令重排和happens-before原则" class="headerlink" title="3.3指令重排和happens-before原则"></a>3.3指令重排和happens-before原则</h3><p>指令重排有可能导致有序性失效。</p>
+<h3 id="指令重排和happens-before原则"><a href="#指令重排和happens-before原则" class="headerlink" title="指令重排和happens-before原则"></a>指令重排和happens-before原则</h3><p>指令重排有可能导致有序性失效。</p>
 <p>happens-before原则：</p>
 <ul>
 <li>线程内按照代码顺序，写在前面的代码先行发生在卸载后面的代码。</li>
@@ -855,22 +957,22 @@ new Thread()&#123;
 <li>线程终结原则：线程的所有操作都先于线程的终止检测，使用thread.jion()结束。</li>
 <li>对象终结原则：一个对象的初始化完成在finalize()方法之前。</li>
 </ul>
-<h3 id="3-4volatile底层如何基于内存屏障保证可见性和有序性"><a href="#3-4volatile底层如何基于内存屏障保证可见性和有序性" class="headerlink" title="3.4volatile底层如何基于内存屏障保证可见性和有序性"></a>3.4volatile底层如何基于内存屏障保证可见性和有序性</h3><p>对volatile的值的操作代码前后加上内存屏障。</p>
+<h3 id="volatile底层如何基于内存屏障保证可见性和有序性"><a href="#volatile底层如何基于内存屏障保证可见性和有序性" class="headerlink" title="volatile底层如何基于内存屏障保证可见性和有序性"></a>volatile底层如何基于内存屏障保证可见性和有序性</h3><p>对volatile的值的操作代码前后加上内存屏障。</p>
 <p>内存屏障：禁止重排序</p>
-<h2 id="4-Spring"><a href="#4-Spring" class="headerlink" title="4.Spring"></a>4.Spring</h2><h3 id="4-1Spring的IOC"><a href="#4-1Spring的IOC" class="headerlink" title="4.1Spring的IOC"></a>4.1Spring的IOC</h3><p>如果没有IOC：tomcat+servlet：tomcat 监听端口来将请求转发给servlet来处理，耦合严重，需要变动时，修改很麻烦。</p>
+<h2 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h2><h3 id="Spring的IOC"><a href="#Spring的IOC" class="headerlink" title="Spring的IOC"></a>Spring的IOC</h3><p>如果没有IOC：tomcat+servlet：tomcat 监听端口来将请求转发给servlet来处理，耦合严重，需要变动时，修改很麻烦。</p>
 <p>IOC：<strong>依赖注入，控制反转，容器根据xml配置或者注解来对bean对象之间的引用关系进行依赖注入</strong></p>
 <p>底层核心技术：反射。根据类来自动构建对应的对象。</p>
 <p>类与类彻底解耦。</p>
 <p><img src="http://gohoy.top/i/2023/08/01/njxvd8-1.png" alt="image-20230801142412643"></p>
-<h3 id="4-2-Spring的AOP"><a href="#4-2-Spring的AOP" class="headerlink" title="4.2 Spring的AOP"></a>4.2 Spring的AOP</h3><p>MySQL：事务：一次开启一个事务，其中进行多次增删改查。如果有一条失败了，会回滚事务，把这个事务中所有的sql语句都恢复。</p>
+<h3 id="Spring的AOP"><a href="#Spring的AOP" class="headerlink" title="Spring的AOP"></a>Spring的AOP</h3><p>MySQL：事务：一次开启一个事务，其中进行多次增删改查。如果有一条失败了，会回滚事务，把这个事务中所有的sql语句都恢复。</p>
 <p>AOP:做一个切面Aspect，给所有类似servicexxx代码之前都会开启一个事务，在这些方法运行完毕之后，根据是否抛出异常，去回滚或者提交事务。</p>
 <p>核心技术：动态代理</p>
 <p><strong>Spring会给正在运行的类生成动态代理类，包含我们写的类。然后在代理类中给逻辑前后加上事务。</strong></p>
 <p>如何限定AOP。</p>
 <p>TODO</p>
-<h3 id="4-3了解过cglib动态代理吗，他和jdk动态代理的区别是什么"><a href="#4-3了解过cglib动态代理吗，他和jdk动态代理的区别是什么" class="headerlink" title="4.3了解过cglib动态代理吗，他和jdk动态代理的区别是什么"></a>4.3了解过cglib动态代理吗，他和jdk动态代理的区别是什么</h3><p>jdk动态代理，有接口的时候使用，生成一个实现这些同样接口的对象。</p>
+<h3 id="了解过cglib动态代理吗，他和jdk动态代理的区别是什么"><a href="#了解过cglib动态代理吗，他和jdk动态代理的区别是什么" class="headerlink" title="了解过cglib动态代理吗，他和jdk动态代理的区别是什么"></a>了解过cglib动态代理吗，他和jdk动态代理的区别是什么</h3><p>jdk动态代理，有接口的时候使用，生成一个实现这些同样接口的对象。</p>
 <p>没有接口会使用cglib来生成你的类的子类，覆盖你的类的方法，在方法中加入增强的代码。</p>
-<h3 id="4-4spring事务的实现原理是什么，事务传播机制是什么"><a href="#4-4spring事务的实现原理是什么，事务传播机制是什么" class="headerlink" title="4.4spring事务的实现原理是什么，事务传播机制是什么"></a>4.4spring事务的实现原理是什么，事务传播机制是什么</h3><p>不同事务之间不互相影响</p>
+<h3 id="spring事务的实现原理是什么，事务传播机制是什么"><a href="#spring事务的实现原理是什么，事务传播机制是什么" class="headerlink" title="spring事务的实现原理是什么，事务传播机制是什么"></a>spring事务的实现原理是什么，事务传播机制是什么</h3><p>不同事务之间不互相影响</p>
 <p>@Transactional(propagation &#x3D; Propagation.REQUIRED)会开启一个事务</p>
 <ul>
 <li>Propagation_REQUIRED：如果当前没有事务，创建一个事务，多个调用加入到一个事务中。</li>
@@ -881,8 +983,8 @@ new Thread()&#123;
 <li>Propagation_NEVER：不允许使用事务，有事务会报错</li>
 <li>Propagation_NESTED：嵌套事务，外层事务回滚会导致内存事务也回滚，内层不影响外层。</li>
 </ul>
-<h3 id="4-5-Springboot-的核心架构"><a href="#4-5-Springboot-的核心架构" class="headerlink" title="4.5 Springboot 的核心架构"></a>4.5 Springboot 的核心架构</h3><p>自动装配依赖。不需要像spring一样自己配置xml文件，引入jar包。减少了配置。</p>
-<h3 id="4-6-Spring-核心源码"><a href="#4-6-Spring-核心源码" class="headerlink" title="4.6 Spring 核心源码"></a>4.6 Spring 核心源码</h3><p>Spring bean 生命周期：</p>
+<h3 id="Springboot-的核心架构"><a href="#Springboot-的核心架构" class="headerlink" title="Springboot 的核心架构"></a>Springboot 的核心架构</h3><p>自动装配依赖。不需要像spring一样自己配置xml文件，引入jar包。减少了配置。</p>
+<h3 id="Spring-核心源码"><a href="#Spring-核心源码" class="headerlink" title="Spring 核心源码"></a>Spring 核心源码</h3><p>Spring bean 生命周期：</p>
 <ul>
 <li>创建bean<ul>
 <li>实例化一个bean</li>
@@ -907,27 +1009,27 @@ new Thread()&#123;
 </ul>
 </li>
 </ul>
-<h3 id="4-7-Spring中的设计模式"><a href="#4-7-Spring中的设计模式" class="headerlink" title="4.7 Spring中的设计模式"></a>4.7 Spring中的设计模式</h3><p>工厂，单例，代理</p>
+<h3 id="Spring中的设计模式"><a href="#Spring中的设计模式" class="headerlink" title="Spring中的设计模式"></a>Spring中的设计模式</h3><p>工厂，单例，代理</p>
 <p>工厂模式：使用工厂类来创建类。</p>
 <p>单例模式：每个bean在系统运行期间只会创建一个实例对象。</p>
 <p>代理模式：AOP</p>
-<h3 id="4-8-SpringMVC架构"><a href="#4-8-SpringMVC架构" class="headerlink" title="4.8 SpringMVC架构"></a>4.8 SpringMVC架构</h3><ul>
+<h3 id="SpringMVC架构"><a href="#SpringMVC架构" class="headerlink" title="SpringMVC架构"></a>SpringMVC架构</h3><ul>
 <li>tomcat 监听端口，将请求转发给SpringMVC的DispathcherServlet</li>
 <li>然后SpringMVC再根据url将请求转发给对应的controller</li>
 <li>返回json给前端，前端符合渲染</li>
 </ul>
-<h3 id="4-9-SpringCloud核心架构"><a href="#4-9-SpringCloud核心架构" class="headerlink" title="4.9 SpringCloud核心架构"></a>4.9 SpringCloud核心架构</h3><p>这些框架</p>
-<h2 id="5-JVM"><a href="#5-JVM" class="headerlink" title="5.JVM"></a>5.JVM</h2><h3 id="5-1-JVM中有哪几块内存区域，Java8之后对内存分代做了什么改进"><a href="#5-1-JVM中有哪几块内存区域，Java8之后对内存分代做了什么改进" class="headerlink" title="5.1 JVM中有哪几块内存区域，Java8之后对内存分代做了什么改进"></a>5.1 JVM中有哪几块内存区域，Java8之后对内存分代做了什么改进</h3><ul>
+<h3 id="SpringCloud核心架构"><a href="#SpringCloud核心架构" class="headerlink" title="SpringCloud核心架构"></a>SpringCloud核心架构</h3><p>这些框架</p>
+<h2 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h2><h3 id="JVM中有哪几块内存区域，Java8之后对内存分代做了什么改进"><a href="#JVM中有哪几块内存区域，Java8之后对内存分代做了什么改进" class="headerlink" title="JVM中有哪几块内存区域，Java8之后对内存分代做了什么改进"></a>JVM中有哪几块内存区域，Java8之后对内存分代做了什么改进</h3><ul>
 <li>栈内存：每个线程独有</li>
 <li>堆内存：存放对象、实例</li>
 <li>永久代区域：我们写的类</li>
 </ul>
 <p>Java8以后永久代变成metaspace</p>
 <p>常量区放在了堆里面</p>
-<h3 id="5-2JVM如何运行起来的，如何创建各种对象"><a href="#5-2JVM如何运行起来的，如何创建各种对象" class="headerlink" title="5.2JVM如何运行起来的，如何创建各种对象"></a>5.2JVM如何运行起来的，如何创建各种对象</h3><p><strong>线程执行main函数同时创建对象</strong></p>
+<h3 id="JVM如何运行起来的，如何创建各种对象"><a href="#JVM如何运行起来的，如何创建各种对象" class="headerlink" title="JVM如何运行起来的，如何创建各种对象"></a>JVM如何运行起来的，如何创建各种对象</h3><p><strong>线程执行main函数同时创建对象</strong></p>
 <p>Spring容器创建一些bean对象</p>
 <p>把执行的方法和局部变量放在栈帧。</p>
-<h3 id="5-3-JVM什么时候会触发垃圾回收"><a href="#5-3-JVM什么时候会触发垃圾回收" class="headerlink" title="5.3 JVM什么时候会触发垃圾回收"></a>5.3 JVM什么时候会触发垃圾回收</h3><p>内存分代：年轻代（eden：s1： s2，  8：1：1 ）和老年代</p>
+<h3 id="JVM什么时候会触发垃圾回收"><a href="#JVM什么时候会触发垃圾回收" class="headerlink" title="JVM什么时候会触发垃圾回收"></a>JVM什么时候会触发垃圾回收</h3><p>内存分代：年轻代（eden：s1： s2，  8：1：1 ）和老年代</p>
 <p>年轻代和老年代统称为堆</p>
 <p>新生成的对象实例存放在年轻代。</p>
 <ul>
@@ -943,17 +1045,17 @@ new Thread()&#123;
 </ul>
 </li>
 </ul>
-<h3 id="5-4-什么时候对象会转移到老年代"><a href="#5-4-什么时候对象会转移到老年代" class="headerlink" title="5.4 什么时候对象会转移到老年代"></a>5.4 什么时候对象会转移到老年代</h3><p>如果存活了多次垃圾回收过程，就会转移到老年代</p>
+<h3 id="什么时候对象会转移到老年代"><a href="#什么时候对象会转移到老年代" class="headerlink" title="什么时候对象会转移到老年代"></a>什么时候对象会转移到老年代</h3><p>如果存活了多次垃圾回收过程，就会转移到老年代</p>
 <p>如果s区放不下，会把一些存活的对象直接放到老年代中。</p>
 <p>对于大对象会直接放到老年代中，防止ygc反复复制大对象。</p>
-<h3 id="5-5常用的垃圾回收器，老年代如何回收"><a href="#5-5常用的垃圾回收器，老年代如何回收" class="headerlink" title="5.5常用的垃圾回收器，老年代如何回收"></a>5.5常用的垃圾回收器，老年代如何回收</h3><p>老年代中大多数是长期存活的对象，所以使用标记-清理方法：把所有存活的对象压缩到连续的位置，然后统一清理，可以防止内存碎片问题。</p>
+<h3 id="常用的垃圾回收器，老年代如何回收"><a href="#常用的垃圾回收器，老年代如何回收" class="headerlink" title="常用的垃圾回收器，老年代如何回收"></a>常用的垃圾回收器，老年代如何回收</h3><p>老年代中大多数是长期存活的对象，所以使用标记-清理方法：把所有存活的对象压缩到连续的位置，然后统一清理，可以防止内存碎片问题。</p>
 <p>常用的垃圾回收器：</p>
 <ul>
 <li>CMS+parnew jdk8-jdk9</li>
 <li>g1 jdk11 </li>
 <li>ZGC</li>
 </ul>
-<h3 id="5-6-生产环境如何设置jvm参数的，如何检查jvm的运行情况"><a href="#5-6-生产环境如何设置jvm参数的，如何检查jvm的运行情况" class="headerlink" title="5.6 生产环境如何设置jvm参数的，如何检查jvm的运行情况"></a>5.6 生产环境如何设置jvm参数的，如何检查jvm的运行情况</h3><p>tomcat的配置脚本，catalina脚本设置。</p>
+<h3 id="生产环境如何设置jvm参数的，如何检查jvm的运行情况"><a href="#生产环境如何设置jvm参数的，如何检查jvm的运行情况" class="headerlink" title="生产环境如何设置jvm参数的，如何检查jvm的运行情况"></a>生产环境如何设置jvm参数的，如何检查jvm的运行情况</h3><p>tomcat的配置脚本，catalina脚本设置。</p>
 <p>如果使用jar启动，再java命令后直接加上参数</p>
 <p>参数：</p>
 <ul>
@@ -972,10 +1074,10 @@ new Thread()&#123;
 </li>
 </ul>
 <p>jstat压测，QPS,接口性能</p>
-<h3 id="5-7-JVM-GC优化"><a href="#5-7-JVM-GC优化" class="headerlink" title="5.7 JVM GC优化"></a>5.7 JVM GC优化</h3><p>自己动手进行压测，调试一下</p>
-<h3 id="5-8-发生OOM之后，应该如何排查和处理线上系统的OOM问题"><a href="#5-8-发生OOM之后，应该如何排查和处理线上系统的OOM问题" class="headerlink" title="5.8 发生OOM之后，应该如何排查和处理线上系统的OOM问题"></a>5.8 发生OOM之后，应该如何排查和处理线上系统的OOM问题</h3><p>在jvm设置参数，发生oom之后保存快照。</p>
+<h3 id="JVM-GC优化"><a href="#JVM-GC优化" class="headerlink" title="JVM GC优化"></a>JVM GC优化</h3><p>自己动手进行压测，调试一下</p>
+<h3 id="发生OOM之后，应该如何排查和处理线上系统的OOM问题"><a href="#发生OOM之后，应该如何排查和处理线上系统的OOM问题" class="headerlink" title="发生OOM之后，应该如何排查和处理线上系统的OOM问题"></a>发生OOM之后，应该如何排查和处理线上系统的OOM问题</h3><p>在jvm设置参数，发生oom之后保存快照。</p>
 <p>找出占用内存最大的对象和创建它的代码，进行调优。</p>
-<h2 id="6-网络"><a href="#6-网络" class="headerlink" title="6.网络"></a>6.网络</h2><h3 id="6-1-TCP-IP的四层模型和七层网络模型"><a href="#6-1-TCP-IP的四层模型和七层网络模型" class="headerlink" title="6.1 TCP&#x2F;IP的四层模型和七层网络模型"></a>6.1 TCP&#x2F;IP的四层模型和七层网络模型</h3><p>TCP&#x2F;IP四层：数据链路层、网络层、传输层、应用层</p>
+<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><h3 id="TCP-IP的四层模型和七层网络模型"><a href="#TCP-IP的四层模型和七层网络模型" class="headerlink" title="TCP&#x2F;IP的四层模型和七层网络模型"></a>TCP&#x2F;IP的四层模型和七层网络模型</h3><p>TCP&#x2F;IP四层：数据链路层、网络层、传输层、应用层</p>
 <ul>
 <li>物理层：硬件部分</li>
 <li>数据链路层：将0&#x2F;1信号分组，确定来源去向<ul>
@@ -996,7 +1098,7 @@ new Thread()&#123;
 </ul>
 <p>OSI七层：物理层、会话层、表示层 + 四层模型</p>
 <p>DNS：domain name server ，先通过dns服务器把域名翻译成IP。</p>
-<h3 id="6-2浏览器访问baidu-com会发生什么"><a href="#6-2浏览器访问baidu-com会发生什么" class="headerlink" title="6.2浏览器访问baidu.com会发生什么"></a>6.2浏览器访问baidu.com会发生什么</h3><ul>
+<h3 id="浏览器访问baidu-com会发生什么"><a href="#浏览器访问baidu-com会发生什么" class="headerlink" title="浏览器访问baidu.com会发生什么"></a>浏览器访问baidu.com会发生什么</h3><ul>
 <li>域名解析为IP</li>
 <li>把请求打包成http包</li>
 <li>把http数据包包装成tcp数据包，tcp数据头包含接收者和发送者的端口号</li>
@@ -1008,7 +1110,7 @@ new Thread()&#123;
 </li>
 <li>然后通过多个路由转发到百度的子网中。</li>
 </ul>
-<h3 id="6-3-TCP三次握手和四次挥手的流程，为什么不是五次或者两次？"><a href="#6-3-TCP三次握手和四次挥手的流程，为什么不是五次或者两次？" class="headerlink" title="6.3 TCP三次握手和四次挥手的流程，为什么不是五次或者两次？"></a>6.3 TCP三次握手和四次挥手的流程，为什么不是五次或者两次？</h3><ul>
+<h3 id="TCP三次握手和四次挥手的流程，为什么不是五次或者两次？"><a href="#TCP三次握手和四次挥手的流程，为什么不是五次或者两次？" class="headerlink" title="TCP三次握手和四次挥手的流程，为什么不是五次或者两次？"></a>TCP三次握手和四次挥手的流程，为什么不是五次或者两次？</h3><ul>
 <li>建立连接的三次握手：<ul>
 <li>客户端发送syn（同步），表示自己进入了syn_send状态</li>
 <li>服务端恢复syn+ack（确认）表示确认收到同步请求，并且自己进入syn_recevie状态</li>
@@ -1028,12 +1130,13 @@ new Thread()&#123;
 </li>
 </ul>
 <p> 2 3次挥手好像在某些情况可以合并？</p>
-<h3 id="6-4说一下http长连接的原理"><a href="#6-4说一下http长连接的原理" class="headerlink" title="6.4说一下http长连接的原理"></a>6.4说一下http长连接的原理</h3><p><strong>http本身没有长连接，都是tcp的长连接和短链接</strong></p>
+<h3 id="说一下http长连接的原理"><a href="#说一下http长连接的原理" class="headerlink" title="说一下http长连接的原理"></a>说一下http长连接的原理</h3><p><strong>http本身没有长连接，都是tcp的长连接和短链接</strong></p>
 <p>http协议规范：请求头，请求体什么的</p>
 <p>http1.0 都是短链接，一次请求后直接断开tcp连接，需要指定keep-alive才能建立长连接</p>
 <p>http1.1 默认是长连接</p>
 <p>http2.0支持多路复用，一个tcp可以并行发送多个请求以及接收响应。</p>
-<h3 id="6-5-https-http-ssl-tsl"><a href="#6-5-https-http-ssl-tsl" class="headerlink" title="6.5 https http+ssl&#x2F;tsl"></a>6.5 https http+ssl&#x2F;tsl</h3><p>使用证书加密</p>
+<p>http3.0 QUIC 建立在udp之上。</p>
+<h3 id="https-http-ssl-tsl"><a href="#https-http-ssl-tsl" class="headerlink" title="https http+ssl&#x2F;tsl"></a>https http+ssl&#x2F;tsl</h3><p>使用证书加密</p>
 <ul>
 <li>非对称加密：rsa<ul>
 <li>网站给浏览器发送证书（由权威机构颁发），浏览器验证合法性</li>
@@ -1043,14 +1146,14 @@ new Thread()&#123;
 </ul>
 </li>
 </ul>
-<h2 id="7-MySQL"><a href="#7-MySQL" class="headerlink" title="7.MySQL"></a>7.MySQL</h2><h3 id="7-1-引擎：mysiam-innodb"><a href="#7-1-引擎：mysiam-innodb" class="headerlink" title="7.1 引擎：mysiam innodb"></a>7.1 引擎：mysiam innodb</h3><ul>
+<h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><h3 id="引擎：mysiam-innodb"><a href="#引擎：mysiam-innodb" class="headerlink" title="引擎：mysiam innodb"></a>引擎：mysiam innodb</h3><ul>
 <li>mysiam：不支持事务，不支持外键约束。索引和数据文件分开，可以在内存缓存更多索引，查询性能会更好，适用于少量插入，大量查询<ul>
 <li>hadoop报表系统，用mysql mysiam比较适合，但是数据量太大超过500w以上就也不能用mysql了。</li>
 </ul>
 </li>
 <li>innodb（默认）：支持事务，外键约束，高并发，高可用，大数据量</li>
 </ul>
-<h3 id="7-2-Mysql索引原理和数据结构。"><a href="#7-2-Mysql索引原理和数据结构。" class="headerlink" title="7.2 Mysql索引原理和数据结构。"></a>7.2 Mysql索引原理和数据结构。</h3><p>索引：默认b+树</p>
+<h3 id="Mysql索引原理和数据结构。"><a href="#Mysql索引原理和数据结构。" class="headerlink" title="Mysql索引原理和数据结构。"></a>Mysql索引原理和数据结构。</h3><p>索引：默认b+树</p>
 <ul>
 <li>b-树<ul>
 <li>每个节点都存储对应的data</li>
@@ -1063,7 +1166,7 @@ new Thread()&#123;
 </ul>
 <p>Mysiam的索引：叶子节点存储的是索引的物理地址。然后用物理地址去数据文件找数据。</p>
 <p>Innodb的索引：表要求必须要有主键，默认会为主键建立一个索引，节点data包含所有数据（一个记录，整行），叫做聚簇索引。如果你使用name来找数据，那么从name索引中找到的data是主键（id），再用id从聚簇索引找data。</p>
-<h3 id="7-3-索引的使用规则"><a href="#7-3-索引的使用规则" class="headerlink" title="7.3 索引的使用规则"></a>7.3 索引的使用规则</h3><p>怎么建立索引？</p>
+<h3 id="索引的使用规则"><a href="#索引的使用规则" class="headerlink" title="索引的使用规则"></a>索引的使用规则</h3><p>怎么建立索引？</p>
 <p><strong>最左前缀匹配原则：</strong></p>
 <p>创建联合索引：create index(shop_id,product_id,gmt_create)</p>
 <p>如果你使用 shop_id 和 gmt_create来查找，那么不会直接通过这个联合索引查找，而是通过使用shop_id筛选出来一些数据，之后扫描gmt_create字段符合要求过滤。（性能也还行）。</p>
@@ -1072,14 +1175,14 @@ new Thread()&#123;
 <p>调用了函数的sql语句不使用索引</p>
 <p><strong>建立尽量少的索引，10条以内为佳</strong></p>
 <p><strong>尽量选唯一字段进行建立索引</strong>。选择的字段 去重后数量&#x2F;总数量 ，结果要是小，则说明这个索引用处不大。</p>
-<h3 id="7-4事务的几个特点"><a href="#7-4事务的几个特点" class="headerlink" title="7.4事务的几个特点"></a>7.4事务的几个特点</h3><p><strong>ACID</strong></p>
+<h3 id="事务的几个特点"><a href="#事务的几个特点" class="headerlink" title="事务的几个特点"></a>事务的几个特点</h3><p><strong>ACID</strong></p>
 <ul>
 <li>Atomic：原子性，同时执行的sql要么一起成功，要么一起失败</li>
 <li>Consistency：一致性，事务之前前后数据都应该是正确的</li>
 <li>Isolation：隔离性，多个事务之间不互相干扰</li>
 <li>Durability：持久性</li>
 </ul>
-<h3 id="7-5隔离级别"><a href="#7-5隔离级别" class="headerlink" title="7.5隔离级别"></a>7.5隔离级别</h3><ul>
+<h3 id="隔离级别"><a href="#隔离级别" class="headerlink" title="隔离级别"></a>隔离级别</h3><ul>
 <li>读未提交：事务A读取到事务B还没有提交的数据</li>
 <li>读已提交：事务A读取到原来的数据，然后事务B提交修改，事务A再次读取，读到不一样的数据。（不可重复读）</li>
 <li>可重复读：事务A读取到原来的数据，然后事务B提交修改，事务A再次读取，读到的还是事务A最开始读取到的数据。（可重复读）</li>
@@ -1102,7 +1205,7 @@ new Thread()&#123;
 <li><p>不同事务修改某行数据，会多出来一行，id相同。</p>
 </li>
 </ul>
-<h3 id="7-6数据库锁"><a href="#7-6数据库锁" class="headerlink" title="7.6数据库锁"></a>7.6数据库锁</h3><p><strong>自动加锁</strong></p>
+<h3 id="数据库锁"><a href="#数据库锁" class="headerlink" title="数据库锁"></a>数据库锁</h3><p><strong>自动加锁</strong></p>
 <p>表锁 行锁 页锁</p>
 <ul>
 <li>myisam会加表锁。锁表的时候查询会报504</li>
@@ -1118,45 +1221,47 @@ new Thread()&#123;
 <p><strong>悲观锁</strong>：进行操作都加上排他锁</p>
 <p><strong>乐观锁</strong>：加上版本号字段，在事务修改期间如果版本号不同，则这次修改失败，需要重新读取操作。</p>
 <p><strong>死锁</strong>：dba查看死锁日志。</p>
-<h3 id="7-7MySQL调优的常用手段"><a href="#7-7MySQL调优的常用手段" class="headerlink" title="7.7MySQL调优的常用手段"></a>7.7MySQL调优的常用手段</h3><ul>
+<h3 id="MySQL调优的常用手段"><a href="#MySQL调优的常用手段" class="headerlink" title="MySQL调优的常用手段"></a>MySQL调优的常用手段</h3><ul>
 <li>保持sql简单，建议使用单表查询<ul>
 <li>优化索引</li>
 <li>查看sql的执行计划：explain select * from table</li>
 </ul>
 </li>
 </ul>
-<h2 id="8-socket"><a href="#8-socket" class="headerlink" title="8. socket"></a>8. socket</h2><p>直接使用tcp进行通信，就是socket编程</p>
+<h3 id="E-R图"><a href="#E-R图" class="headerlink" title="E-R图"></a>E-R图</h3><p>entities-relationship图</p>
+<p>关系：操作数是关系，重复行的对应关系（投影）要去掉。剩下的是关系：一对多，一对一，多对多等</p>
+<h2 id="socket"><a href="#socket" class="headerlink" title="socket"></a>socket</h2><p>直接使用tcp进行通信，就是socket编程</p>
 <p>可以认为socket处于传输层。或者是介于传输层和应用层直接。</p>
 <p>socket 就是封装了tcp的编程规范</p>
-<h2 id="9-进程通信和线程切换"><a href="#9-进程通信和线程切换" class="headerlink" title="9.进程通信和线程切换"></a>9.进程通信和线程切换</h2><h3 id="9-1进程通信"><a href="#9-1进程通信" class="headerlink" title="9.1进程通信"></a>9.1进程通信</h3><p>9.1.1管道 pipe</p>
+<h2 id="进程通信和线程切换"><a href="#进程通信和线程切换" class="headerlink" title="进程通信和线程切换"></a>进程通信和线程切换</h2><h3 id="进程通信"><a href="#进程通信" class="headerlink" title="进程通信"></a>进程通信</h3><p>9.1.1管道 pipe</p>
 <p>只有父子进程（fork得到的）才能使用这个管道进行通信。</p>
 <p>9.1.2命名管道</p>
 <p>无亲缘关系的管道可以使用命名管道通信</p>
 <p>9.1.3消息队列</p>
 <p>9.1.4共享内存</p>
-<h3 id="9-2线程如何切换"><a href="#9-2线程如何切换" class="headerlink" title="9.2线程如何切换"></a>9.2线程如何切换</h3><p>时间片轮换</p>
+<h3 id="线程如何切换"><a href="#线程如何切换" class="headerlink" title="线程如何切换"></a>线程如何切换</h3><p>时间片轮换</p>
 <p>优先级调度等</p>
-<h2 id="10-nio，bio，aio都是什么，有什么区别。nio的原理是什么"><a href="#10-nio，bio，aio都是什么，有什么区别。nio的原理是什么" class="headerlink" title="10.nio，bio，aio都是什么，有什么区别。nio的原理是什么"></a>10.nio，bio，aio都是什么，有什么区别。nio的原理是什么</h2><h3 id="10-1-bio通信原理"><a href="#10-1-bio通信原理" class="headerlink" title="10.1 bio通信原理"></a>10.1 bio通信原理</h3><p>服务端使用ServerSocket为每一个客户端建立一个线程用于通信。只要客户端还和服务端有连接，这个线程都要等待。</p>
+<h2 id="nio，bio，aio都是什么，有什么区别。nio的原理是什么"><a href="#nio，bio，aio都是什么，有什么区别。nio的原理是什么" class="headerlink" title="nio，bio，aio都是什么，有什么区别。nio的原理是什么"></a>nio，bio，aio都是什么，有什么区别。nio的原理是什么</h2><h3 id="bio通信原理"><a href="#bio通信原理" class="headerlink" title="bio通信原理"></a>bio通信原理</h3><p>服务端使用ServerSocket为每一个客户端建立一个线程用于通信。只要客户端还和服务端有连接，这个线程都要等待。</p>
 <p>问题：超过几千客户端就不能够正常运行了</p>
-<h3 id="10-2-nio通信原理"><a href="#10-2-nio通信原理" class="headerlink" title="10.2 nio通信原理"></a>10.2 nio通信原理</h3><p>每有一个客户端和服务端建立连接，都会创建一个channel，这些channel都会注册在selector中，这个selector只有一个线程。会不断轮询这些channel。，如果有请求过来，会创建一个线程来处理这个请求。处理完成后这个线程会被销毁。</p>
+<h3 id="nio通信原理"><a href="#nio通信原理" class="headerlink" title="nio通信原理"></a>nio通信原理</h3><p>每有一个客户端和服务端建立连接，都会创建一个channel，这些channel都会注册在selector中，这个selector只有一个线程。会不断轮询这些channel。，如果有请求过来，会创建一个线程来处理这个请求。处理完成后这个线程会被销毁。</p>
 <p>可以对处理请求的线程创建一个线程池。</p>
 <p>在工作线程和channel 直接可以维护一个cache</p>
 <p>工作线程从channel 中读取数据，给channel写数据，是同步的</p>
-<h3 id="10-3-aio"><a href="#10-3-aio" class="headerlink" title="10.3 aio"></a>10.3 aio</h3><p>对nio有优化：工作进程从channel读数据的时候，会绑定一个buffer，让操作系统来完成读操作，读完了来通知这个线程。</p>
+<h3 id="aio"><a href="#aio" class="headerlink" title="aio"></a>aio</h3><p>对nio有优化：工作进程从channel读数据的时候，会绑定一个buffer，让操作系统来完成读操作，读完了来通知这个线程。</p>
 <p>写的时候也是把写的过程交给操作系统。</p>
-<h3 id="10-4-同步阻塞、同步非阻塞、异步非阻塞"><a href="#10-4-同步阻塞、同步非阻塞、异步非阻塞" class="headerlink" title="10.4 同步阻塞、同步非阻塞、异步非阻塞"></a>10.4 同步阻塞、同步非阻塞、异步非阻塞</h3><p>BIO是同步阻塞，针对的是对磁盘文件的io读写。读写过程中线程阻塞</p>
+<h3 id="同步阻塞、同步非阻塞、异步非阻塞"><a href="#同步阻塞、同步非阻塞、异步非阻塞" class="headerlink" title="同步阻塞、同步非阻塞、异步非阻塞"></a>同步阻塞、同步非阻塞、异步非阻塞</h3><p>BIO是同步阻塞，针对的是对磁盘文件的io读写。读写过程中线程阻塞</p>
 <p>NIO是同步非阻塞，在操作系统读写数据的时候，线程可以做其他事情，但是也需要不断轮询判断读写完成了没有。</p>
 <p>AIO 是异步非阻塞，发起文件读写的操作之后，交给操作系统，操作系统执行完毕之后，会通知这个线程。</p>
-<h3 id="10-5-BIO-NIO-AIO-demo代码"><a href="#10-5-BIO-NIO-AIO-demo代码" class="headerlink" title="10.5 BIO NIO AIO demo代码"></a>10.5 BIO NIO AIO demo代码</h3><p>TOREAD</p>
-<h2 id="11-线上服务器问题"><a href="#11-线上服务器问题" class="headerlink" title="11.线上服务器问题"></a>11.线上服务器问题</h2><h3 id="11-1线上CPU占用100-，排查步骤："><a href="#11-1线上CPU占用100-，排查步骤：" class="headerlink" title="11.1线上CPU占用100%，排查步骤："></a>11.1线上CPU占用100%，排查步骤：</h3><ul>
+<h3 id="BIO-NIO-AIO-demo代码"><a href="#BIO-NIO-AIO-demo代码" class="headerlink" title="BIO NIO AIO demo代码"></a>BIO NIO AIO demo代码</h3><p>TOREAD</p>
+<h2 id="线上服务器问题"><a href="#线上服务器问题" class="headerlink" title="线上服务器问题"></a>线上服务器问题</h2><h3 id="线上CPU占用100-，排查步骤："><a href="#线上CPU占用100-，排查步骤：" class="headerlink" title="线上CPU占用100%，排查步骤："></a>线上CPU占用100%，排查步骤：</h3><ul>
 <li>top -c 输入P ，按照cpu进行排序</li>
 <li>top -Hp pid ，可以看到这个进程的负载</li>
 <li>把线程pid换成16进制pidhex，如何使用jstack pid | grep pidhex -C5 –color 就可以定位到线程中哪行代码的cpu占用最高。</li>
 </ul>
-<h3 id="11-2如果线上进程kill不掉怎么办"><a href="#11-2如果线上进程kill不掉怎么办" class="headerlink" title="11.2如果线上进程kill不掉怎么办"></a>11.2如果线上进程kill不掉怎么办</h3><p>ps aux 查看是否有僵尸进程 zombie</p>
+<h3 id="如果线上进程kill不掉怎么办"><a href="#如果线上进程kill不掉怎么办" class="headerlink" title="如果线上进程kill不掉怎么办"></a>如果线上进程kill不掉怎么办</h3><p>ps aux 查看是否有僵尸进程 zombie</p>
 <p>ps -ef  | grep 僵尸进程id ，得到父进程id</p>
 <p>然后kill 父进程之后kill子进程。</p>
-<h3 id="11-3磁盘马上占满了怎么办"><a href="#11-3磁盘马上占满了怎么办" class="headerlink" title="11.3磁盘马上占满了怎么办"></a>11.3磁盘马上占满了怎么办</h3><p>是否是日志占满空间了？</p>
+<h3 id="磁盘马上占满了怎么办"><a href="#磁盘马上占满了怎么办" class="headerlink" title="磁盘马上占满了怎么办"></a>磁盘马上占满了怎么办</h3><p>是否是日志占满空间了？</p>
 <p>经历：安装程序的时候提示根目录空间占用100%，发现是pcp（性能监控软件）的日志占用了很大空间。解决方法是直接使用rm -rf删除了这些日志&#x2F;var&#x2F;log&#x2F;pcp&#x2F;pmlogger&#x2F;openEuler1&#x2F;。</p>
 <p>关于pcp：</p>
 <ul>
@@ -1165,7 +1270,7 @@ new Thread()&#123;
 </ul>
 <p> 	</p>
 <p>find &#x2F; -size+100M | xargs ls -lh  找大于100m的文件</p>
-<h2 id="12-Java语言特性"><a href="#12-Java语言特性" class="headerlink" title="12.Java语言特性"></a>12.Java语言特性</h2><h3 id="12-1参数传递"><a href="#12-1参数传递" class="headerlink" title="12.1参数传递"></a>12.1参数传递</h3><ul>
+<h2 id="Java语言特性"><a href="#Java语言特性" class="headerlink" title="Java语言特性"></a>Java语言特性</h2><h3 id="参数传递"><a href="#参数传递" class="headerlink" title="参数传递"></a>参数传递</h3><ul>
 <li>Java 中将实参传递给方法（或函数）的方式是 <strong>值传递</strong>：<ul>
 <li>如果参数是基本类型的话，很简单，传递的就是基本类型的字面量值的拷贝，会创建副本。</li>
 <li>如果参数是引用类型，传递的就是实参所引用的对象在堆中地址值的拷贝，同样也会创建副本</li>
@@ -1185,7 +1290,7 @@ new Thread()&#123;
 </ul>
 </li>
 </ul>
-<h3 id="12-2序列化"><a href="#12-2序列化" class="headerlink" title="12.2序列化"></a>12.2序列化</h3><ul>
+<h3 id="序列化"><a href="#序列化" class="headerlink" title="序列化"></a>序列化</h3><ul>
 <li><p>序列化协议属于应用层或者传输层</p>
 </li>
 <li><p>序列化的对象：实现Serializable 接口的类、实例变量的值、非静态成员变量</p>
@@ -1243,7 +1348,7 @@ public class KryoSerializationExample &#123;
 </ul>
 </li>
 </ul>
-<h3 id="12-3泛型和通配符"><a href="#12-3泛型和通配符" class="headerlink" title="12.3泛型和通配符"></a>12.3泛型和通配符</h3><ol>
+<h3 id="泛型和通配符"><a href="#泛型和通配符" class="headerlink" title="泛型和通配符"></a>泛型和通配符</h3><ol>
 <li>泛型（Generics）：泛型允许在编译时指定类、接口或方法操作的数据类型，以提供类型安全和代码重用。通过使用泛型，可以在编译时捕获类型错误，并避免在运行时出现类型转换错误。<ul>
 <li>定义泛型类：使用 <code>&lt;T&gt;</code> 来表示类型参数，可以在类名后面声明一个泛型类型。例如：<code>class MyClass&lt;T&gt; &#123; ... &#125;</code>。</li>
 <li>定义泛型方法：使用 <code>&lt;T&gt;</code> 来表示类型参数，可以在方法返回类型前声明一个泛型类型。例如：<code>&lt;T&gt; T myMethod(T obj) &#123; ... &#125;</code>。</li>
@@ -1264,7 +1369,7 @@ public class KryoSerializationExample &#123;
 </ul>
 </li>
 </ol>
-<h3 id="12-4反射"><a href="#12-4反射" class="headerlink" title="12.4反射"></a>12.4反射</h3><h5 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h5><pre><code class="java">//获取类
+<h3 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h3><h5 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h5><pre><code class="java">//获取类
 Class&lt;?&gt; myClass = MyClass.class;
 Class&lt;?&gt; myClass = Class.forName(&quot;com.example.MyClass&quot;);
 //获取构造函数
@@ -1283,7 +1388,7 @@ Object fieldValue = field.get(myObject);
 field.set(myObject, value);
 //对于私有方法或字段，可能需要使用setAccessible(true)来绕过访问限制。
 </code></pre>
-<h3 id="12-5代理模式"><a href="#12-5代理模式" class="headerlink" title="12.5代理模式"></a>12.5代理模式</h3><h5 id="1-静态代理："><a href="#1-静态代理：" class="headerlink" title="1.静态代理："></a>1.静态代理：</h5><p>就是把在调用类的前后在执行一些步骤。</p>
+<h3 id="代理模式"><a href="#代理模式" class="headerlink" title="代理模式"></a>代理模式</h3><h5 id="1-静态代理："><a href="#1-静态代理：" class="headerlink" title="1.静态代理："></a>1.静态代理：</h5><p>就是把在调用类的前后在执行一些步骤。</p>
 <pre><code class="java">public class SmsProxy implements SmsService &#123;
 
     private final SmsService smsService;
@@ -1368,7 +1473,7 @@ public class DebugMethodInterceptor implements MethodInterceptor &#123;
 <p><strong>2.3二者的区别</strong></p>
 <p>jdk动态代理，有接口的时候使用，生成一个实现这些同样接口的对象。</p>
 <p>没有接口会使用cglib来生成你的类的子类，覆盖你的类的方法，在方法中加入增强的代码。</p>
-<h3 id="12-6-BigDecimal常见方法"><a href="#12-6-BigDecimal常见方法" class="headerlink" title="12.6 BigDecimal常见方法"></a>12.6 BigDecimal常见方法</h3><p>我们在使用 <code>BigDecimal</code> 时，为了防止精度丢失，推荐使用它的<code>BigDecimal(String val)</code>构造方法或者 <code>BigDecimal.valueOf(double val)</code> 静态方法来创建对象。</p>
+<h3 id="BigDecimal常见方法"><a href="#BigDecimal常见方法" class="headerlink" title="BigDecimal常见方法"></a>BigDecimal常见方法</h3><p>我们在使用 <code>BigDecimal</code> 时，为了防止精度丢失，推荐使用它的<code>BigDecimal(String val)</code>构造方法或者 <code>BigDecimal.valueOf(double val)</code> 静态方法来创建对象。</p>
 <p><strong>使用BigDecimal(double val)会丢失精度</strong></p>
 <p>方法：</p>
 <ul>
@@ -1386,118 +1491,172 @@ public class DebugMethodInterceptor implements MethodInterceptor &#123;
 <li>setScale：保留小数</li>
 </ul>
 <p>工具类：</p>
-<details>
- <summary>点我展开看代码</summary>
-    <pre><code>import java.math.BigDecimal;
+<details><summary>点击查看代码</summary>
+ <pre><code>
+import java.math.BigDecimal;
 import java.math.RoundingMode;
+/**
+ * 简化BigDecimal计算的小工具类
+ */
+public class BigDecimalUtil &#123;
+    /**
+     * 默认除法运算精度
+     */
+    private static final int DEF_DIV_SCALE = 10;
+    private BigDecimalUtil() &#123;
+    &#125;
+    /**
+     * 提供精确的加法运算。
+     *
+     * @param v1 被加数
+     * @param v2 加数
+     * @return 两个参数的和
+     */
+    public static double add(double v1, double v2) &#123;
+        BigDecimal b1 = BigDecimal.valueOf(v1);
+        BigDecimal b2 = BigDecimal.valueOf(v2);
+        return b1.add(b2).doubleValue();
+    &#125;
+    /**
+     * 提供精确的减法运算。
+     *
+     * @param v1 被减数
+     * @param v2 减数
+     * @return 两个参数的差
+     */
+    public static double subtract(double v1, double v2) &#123;
+        BigDecimal b1 = BigDecimal.valueOf(v1);
+        BigDecimal b2 = BigDecimal.valueOf(v2);
+        return b1.subtract(b2).doubleValue();
+    &#125;
+    /**
+     * 提供精确的乘法运算。
+     *
+     * @param v1 被乘数
+     * @param v2 乘数
+     * @return 两个参数的积
+     */
+    public static double multiply(double v1, double v2) &#123;
+        BigDecimal b1 = BigDecimal.valueOf(v1);
+        BigDecimal b2 = BigDecimal.valueOf(v2);
+        return b1.multiply(b2).doubleValue();
+    &#125;
+    /**
+     * 提供（相对）精确的除法运算，当发生除不尽的情况时，精确到
+     * 小数点以后10位，以后的数字四舍五入。
+     *
+     * @param v1 被除数
+     * @param v2 除数
+     * @return 两个参数的商
+     */
+    public static double divide(double v1, double v2) &#123;
+        return divide(v1, v2, DEF_DIV_SCALE);
+    &#125;
+    /**
+     * 提供（相对）精确的除法运算。当发生除不尽的情况时，由scale参数指
+     * 定精度，以后的数字四舍五入。
+     *
+     * @param v1    被除数
+     * @param v2    除数
+     * @param scale 表示表示需要精确到小数点以后几位。
+     * @return 两个参数的商
+     */
+    public static double divide(double v1, double v2, int scale) &#123;
+        if (scale < 0) &#123;
+            throw new IllegalArgumentException(
+                    "The scale must be a positive integer or zero");
+        &#125;
+        BigDecimal b1 = BigDecimal.valueOf(v1);
+        BigDecimal b2 = BigDecimal.valueOf(v2);
+        return b1.divide(b2, scale, RoundingMode.HALF_EVEN).doubleValue();
+    &#125;
+    /**
+     * 提供精确的小数位四舍五入处理。
+     *
+     * @param v     需要四舍五入的数字
+     * @param scale 小数点后保留几位
+     * @return 四舍五入后的结果
+     */
+    public static double round(double v, int scale) &#123;
+        if (scale < 0) &#123;
+            throw new IllegalArgumentException(
+                    "The scale must be a positive integer or zero");
+        &#125;
+        BigDecimal b = BigDecimal.valueOf(v);
+        BigDecimal one = new BigDecimal("1");
+        return b.divide(one, scale, RoundingMode.HALF_UP).doubleValue();
+    &#125;
+    /**
+     * 提供精确的类型转换(Float)
+     *
+     * @param v 需要被转换的数字
+     * @return 返回转换结果
+     */
+    public static float convertToFloat(double v) &#123;
+        BigDecimal b = new BigDecimal(v);
+        return b.floatValue();
+    &#125;
+    /**
+     * 提供精确的类型转换(Int)不进行四舍五入
+     *
+     * @param v 需要被转换的数字
+     * @return 返回转换结果
+     */
+    public static int convertsToInt(double v) &#123;
+        BigDecimal b = new BigDecimal(v);
+        return b.intValue();
+    &#125;
+    /**
+     * 提供精确的类型转换(Long)
+     *
+     * @param v 需要被转换的数字
+     * @return 返回转换结果
+     */
+    public static long convertsToLong(double v) &#123;
+        BigDecimal b = new BigDecimal(v);
+        return b.longValue();
+    &#125;
+    /**
+     * 返回两个数中大的一个值
+     *
+     * @param v1 需要被对比的第一个数
+     * @param v2 需要被对比的第二个数
+     * @return 返回两个数中大的一个值
+     */
+    public static double returnMax(double v1, double v2) &#123;
+        BigDecimal b1 = new BigDecimal(v1);
+        BigDecimal b2 = new BigDecimal(v2);
+        return b1.max(b2).doubleValue();
+    &#125;
+    /**
+     * 返回两个数中小的一个值
+     *
+     * @param v1 需要被对比的第一个数
+     * @param v2 需要被对比的第二个数
+     * @return 返回两个数中小的一个值
+     */
+    public static double returnMin(double v1, double v2) &#123;
+        BigDecimal b1 = new BigDecimal(v1);
+        BigDecimal b2 = new BigDecimal(v2);
+        return b1.min(b2).doubleValue();
+    &#125;
+    /**
+     * 精确对比两个数字
+     *
+     * @param v1 需要被对比的第一个数
+     * @param v2 需要被对比的第二个数
+     * @return 如果两个数一样则返回0，如果第一个数比第二个数大则返回1，反之返回-1
+     */
+    public static int compareTo(double v1, double v2) &#123;
+        BigDecimal b1 = BigDecimal.valueOf(v1);
+        BigDecimal b2 = BigDecimal.valueOf(v2);
+        return b1.compareTo(b2);
+    &#125;
+&#125;
+    </code></pre>
+</details>
 
-<p>&#x2F;**</p>
-<ul>
-<li><p>简化BigDecimal计算的小工具类<br> *&#x2F;<br>public class BigDecimalUtil &#123;</p>
-<p> &#x2F;**</p>
-<ul>
-<li>默认除法运算精度<br>  *&#x2F;<br> private static final int DEF_DIV_SCALE &#x3D; 10;</li>
-</ul>
-<p> private BigDecimalUtil() &#123;<br> &#125;</p>
-<p> &#x2F;**</p>
-<ul>
-<li>提供精确的加法运算。</li>
-<li></li>
-<li>@param v1 被加数</li>
-<li>@param v2 加数</li>
-<li>@return 两个参数的和<br>  *&#x2F;<br> public static double add(double v1, double v2) &#123;<br> BigDecimal b1 &#x3D; BigDecimal.valueOf(v1);<br> BigDecimal b2 &#x3D; BigDecimal.valueOf(v2);<br> return b1.add(b2).doubleValue();<br> &#125;</li>
-</ul>
-<p> &#x2F;**</p>
-<ul>
-<li>提供精确的减法运算。</li>
-<li></li>
-<li>@param v1 被减数</li>
-<li>@param v2 减数</li>
-<li>@return 两个参数的差<br>  *&#x2F;<br> public static double subtract(double v1, double v2) &#123;<br> BigDecimal b1 &#x3D; BigDecimal.valueOf(v1);<br> BigDecimal b2 &#x3D; BigDecimal.valueOf(v2);<br> return b1.subtract(b2).doubleValue();<br> &#125;</li>
-</ul>
-<p> &#x2F;**</p>
-<ul>
-<li>提供精确的乘法运算。</li>
-<li></li>
-<li>@param v1 被乘数</li>
-<li>@param v2 乘数</li>
-<li>@return 两个参数的积<br>  *&#x2F;<br> public static double multiply(double v1, double v2) &#123;<br> BigDecimal b1 &#x3D; BigDecimal.valueOf(v1);<br> BigDecimal b2 &#x3D; BigDecimal.valueOf(v2);<br> return b1.multiply(b2).doubleValue();<br> &#125;</li>
-</ul>
-<p> &#x2F;**</p>
-<ul>
-<li>提供（相对）精确的除法运算，当发生除不尽的情况时，精确到</li>
-<li>小数点以后10位，以后的数字四舍五入。</li>
-<li></li>
-<li>@param v1 被除数</li>
-<li>@param v2 除数</li>
-<li>@return 两个参数的商<br>  *&#x2F;<br> public static double divide(double v1, double v2) &#123;<br> return divide(v1, v2, DEF_DIV_SCALE);<br> &#125;</li>
-</ul>
-<p> &#x2F;**</p>
-<ul>
-<li>提供（相对）精确的除法运算。当发生除不尽的情况时，由scale参数指</li>
-<li>定精度，以后的数字四舍五入。</li>
-<li></li>
-<li>@param v1    被除数</li>
-<li>@param v2    除数</li>
-<li>@param scale 表示表示需要精确到小数点以后几位。</li>
-<li>@return 两个参数的商<br>  *&#x2F;<br> public static double divide(double v1, double v2, int scale) &#123;<br> if (scale &lt; 0) &#123;<br> throw new IllegalArgumentException(<br>         “The scale must be a positive integer or zero”);<br> &#125;<br> BigDecimal b1 &#x3D; BigDecimal.valueOf(v1);<br> BigDecimal b2 &#x3D; BigDecimal.valueOf(v2);<br> return b1.divide(b2, scale, RoundingMode.HALF_UP).doubleValue();<br> &#125;</li>
-</ul>
-<p> &#x2F;**</p>
-<ul>
-<li>提供精确的小数位四舍五入处理。</li>
-<li></li>
-<li>@param v     需要四舍五入的数字</li>
-<li>@param scale 小数点后保留几位</li>
-<li>@return 四舍五入后的结果<br>  *&#x2F;<br> public static double round(double v, int scale) &#123;<br> if (scale &lt; 0) &#123;<br> throw new IllegalArgumentException(<br>         “The scale must be a positive integer or zero”);<br> &#125;<br> BigDecimal b &#x3D; BigDecimal.valueOf(v);<br> BigDecimal one &#x3D; new BigDecimal(“1”);<br> return b.divide(one, scale, RoundingMode.HALF_UP).doubleValue();<br> &#125;</li>
-</ul>
-<p> &#x2F;**</p>
-<ul>
-<li>提供精确的类型转换(Float)</li>
-<li></li>
-<li>@param v 需要被转换的数字</li>
-<li>@return 返回转换结果<br>  *&#x2F;<br> public static float convertToFloat(double v) &#123;<br> BigDecimal b &#x3D; new BigDecimal(v);<br> return b.floatValue();<br> &#125;</li>
-</ul>
-<p> &#x2F;**</p>
-<ul>
-<li>提供精确的类型转换(Int)不进行四舍五入</li>
-<li></li>
-<li>@param v 需要被转换的数字</li>
-<li>@return 返回转换结果<br>  *&#x2F;<br> public static int convertsToInt(double v) &#123;<br> BigDecimal b &#x3D; new BigDecimal(v);<br> return b.intValue();<br> &#125;</li>
-</ul>
-<p> &#x2F;**</p>
-<ul>
-<li>提供精确的类型转换(Long)</li>
-<li></li>
-<li>@param v 需要被转换的数字</li>
-<li>@return 返回转换结果<br>  *&#x2F;<br> public static long convertsToLong(double v) &#123;<br> BigDecimal b &#x3D; new BigDecimal(v);<br> return b.longValue();<br> &#125;</li>
-</ul>
-<p> &#x2F;**</p>
-<ul>
-<li>返回两个数中大的一个值</li>
-<li></li>
-<li>@param v1 需要被对比的第一个数</li>
-<li>@param v2 需要被对比的第二个数</li>
-<li>@return 返回两个数中大的一个值<br>  *&#x2F;<br> public static double returnMax(double v1, double v2) &#123;<br> BigDecimal b1 &#x3D; new BigDecimal(v1);<br> BigDecimal b2 &#x3D; new BigDecimal(v2);<br> return b1.max(b2).doubleValue();<br> &#125;</li>
-</ul>
-<p> &#x2F;**</p>
-<ul>
-<li>返回两个数中小的一个值</li>
-<li></li>
-<li>@param v1 需要被对比的第一个数</li>
-<li>@param v2 需要被对比的第二个数</li>
-<li>@return 返回两个数中小的一个值<br>  *&#x2F;<br> public static double returnMin(double v1, double v2) &#123;<br> BigDecimal b1 &#x3D; new BigDecimal(v1);<br> BigDecimal b2 &#x3D; new BigDecimal(v2);<br> return b1.min(b2).doubleValue();<br> &#125;</li>
-</ul>
-<p> &#x2F;**</p>
-<ul>
-<li>精确对比两个数字</li>
-<li></li>
-<li>@param v1 需要被对比的第一个数</li>
-<li>@param v2 需要被对比的第二个数</li>
-<li>@return 如果两个数一样则返回0，如果第一个数比第二个数大则返回1，反之返回-1<br>  *&#x2F;<br> public static int compareTo(double v1, double v2) &#123;<br> BigDecimal b1 &#x3D; BigDecimal.valueOf(v1);<br> BigDecimal b2 &#x3D; BigDecimal.valueOf(v2);<br> return b1.compareTo(b2);<br> &#125;</li>
-</ul>
-</li>
-</ul>
-<h2 id=""><a href="#" class="headerlink" title="&#125;"></a>&#125;<br></code></pre></details></h2><h3 id="12-7-Unsafe类"><a href="#12-7-Unsafe类" class="headerlink" title="12.7 Unsafe类"></a>12.7 <a target="_blank" rel="noopener" href="https://javaguide.cn/java/basis/unsafe.html">Unsafe类</a></h3><p>在JUC高并发编程中主要使用，用来执行本地方法（native方法）。</p>
+<h3 id="Unsafe类"><a href="#Unsafe类" class="headerlink" title="Unsafe类"></a><a target="_blank" rel="noopener" href="https://javaguide.cn/java/basis/unsafe.html">Unsafe类</a></h3><p>在JUC高并发编程中主要使用，用来执行本地方法（native方法）。</p>
 <p>native方法的执行绕过了Java本身的界限。能直接接触到操作系统底层的某些功能，因此并不安全。</p>
 <p>可以实现的功能：</p>
 <ol>
@@ -1511,7 +1670,7 @@ import java.math.RoundingMode;
 <li>系统信息</li>
 </ol>
 <p>因为其不安全性，并不推荐使用。</p>
-<h3 id="12-8SPI机制"><a href="#12-8SPI机制" class="headerlink" title="12.8SPI机制"></a>12.8SPI机制</h3><h3 id="12-9语法糖"><a href="#12-9语法糖" class="headerlink" title="12.9语法糖"></a>12.9语法糖</h3>
+<h3 id="SPI机制"><a href="#SPI机制" class="headerlink" title="SPI机制"></a>SPI机制</h3><h3 id="语法糖"><a href="#语法糖" class="headerlink" title="语法糖"></a>语法糖</h3>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。也可以邮件至 2738430398@qq.com </span>
     </div>

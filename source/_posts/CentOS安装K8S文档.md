@@ -8,7 +8,7 @@ tags:
  - 教程
 ---
 
-## Centos7 安装 k8s 环境
+# Centos7 安装 k8s 环境
 
 > 安装centos7虚拟机
 

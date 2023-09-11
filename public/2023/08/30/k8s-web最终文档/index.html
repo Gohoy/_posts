@@ -6,19 +6,18 @@
   <meta name="keywords" content=" K8S ">
   <meta name="description" content="K8S-WEB最终文档 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="使用Let’s Encrypt给网站添加SSL1.安装cerbotsudo apt install certbot python3-certbot-nginx  2.为nginx添加SSLsudo certbot --nginx  3.续订SSL(默认三个月)certbot renew">
+<meta name="description" content="springboot查询数据库字段实践任务描述：在订单管理中增加购票信息界面、 查询条件：赛季名称、赛事名称、票种、姓名、身份证号、购买者、区域、座位、票类型 显示字段：赛季名称、赛事名称、票种、姓名、身份证号、购买者、区域、座位、二维码（限制显示长度20字符）、购票时间、票类型 可效仿订单管理页。 后端实现步骤：查看需要查询的表的字段 表名为t_business_member_ticket  字">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用Let&#39;s Encrypt给网站添加SSL">
-<meta property="og:url" content="https://gohoy.github.io/blog/2023/09/04/%E4%BD%BF%E7%94%A8Let's%20Encrypt%E7%BB%99%E7%BD%91%E7%AB%99%E6%B7%BB%E5%8A%A0SSL/index.html">
+<meta property="og:title" content="springboot查询数据库字段实践">
+<meta property="og:url" content="https://gohoy.github.io/blog/2023/09/05/springboot%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%97%E6%AE%B5%E5%AE%9E%E8%B7%B5/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="使用Let’s Encrypt给网站添加SSL1.安装cerbotsudo apt install certbot python3-certbot-nginx  2.为nginx添加SSLsudo certbot --nginx  3.续订SSL(默认三个月)certbot renew">
+<meta property="og:description" content="springboot查询数据库字段实践任务描述：在订单管理中增加购票信息界面、 查询条件：赛季名称、赛事名称、票种、姓名、身份证号、购买者、区域、座位、票类型 显示字段：赛季名称、赛事名称、票种、姓名、身份证号、购买者、区域、座位、二维码（限制显示长度20字符）、购票时间、票类型 可效仿订单管理页。 后端实现步骤：查看需要查询的表的字段 表名为t_business_member_ticket  字">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-09-04T10:49:32.454Z">
-<meta property="article:modified_time" content="2023-09-04T10:56:01.479Z">
+<meta property="article:published_time" content="2023-09-05T11:23:59.427Z">
+<meta property="article:modified_time" content="2023-09-11T13:29:38.328Z">
 <meta property="article:author" content="Gohoy">
-<meta property="article:tag" content="教程">
-<meta property="article:tag" content="ssl">
-<meta property="article:tag" content="https">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="springboot">
 <meta name="twitter:card" content="summary">
 
 
@@ -118,7 +117,7 @@
     <li>
         <div class="all active" data-rel="All">All
             
-                <small>(18)</small>
+                <small>(19)</small>
             
         </div>
     </li>
@@ -205,7 +204,7 @@
         <div data-rel="Java">
             
             Java
-            <small>(1)</small>
+            <small>(2)</small>
         </div>
         
     </li>
@@ -240,8 +239,8 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="18">
-<input type="hidden" id="yelog_site_word_count" value="24.5k">
+<input type="hidden" id="yelog_site_posts_number" value="19">
+<input type="hidden" id="yelog_site_word_count" value="26.5k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -361,6 +360,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>springboot</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>ssl</a>
             </li>
         
@@ -370,6 +373,15 @@
 
     
     <nav id="title-list-nav">
+        
+        
+        <a  class="All Java "
+           href="/blog/2023/09/05/springboot%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%97%E6%AE%B5%E5%AE%9E%E8%B7%B5/"
+           data-tag="Java,springboot"
+           data-author="" >
+            <span class="post-title" title="springboot查询数据库字段实践">springboot查询数据库字段实践</span>
+            <span class="post-date" title="2023-09-05 19:23:59">2023/09/05</span>
+        </a>
         
         
         <a  class="All 教程 "
@@ -578,7 +590,7 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2023-08-30 14:46:43'>2023-08-30 14:45</time>
+            Created At : <time class="date" title='Updated At: 2023-09-11 21:36:49'>2023-08-30 14:45</time>
         
     </div>
     <div class="article-meta">
@@ -602,7 +614,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#K8S-WEB%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3"><span class="toc-text">K8S-WEB项目文档</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#0-%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%89%8D%E7%BD%AE%E6%9C%AF%E8%AF%AD"><span class="toc-text">0.需要了解的前置术语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%90%8E%E7%AB%AF"><span class="toc-text">1.后端</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E6%95%B4%E4%BD%93%E4%BB%A3%E7%A0%81%E5%8C%85%E7%B1%BB%E5%9E%8B%E8%A7%A3%E8%AF%BB"><span class="toc-text">1.1.整体代码包类型解读</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E5%90%8E%E7%AB%AF%E4%BB%A3%E7%A0%81%E7%9A%84api%E6%A1%86%E6%9E%B6"><span class="toc-text">1.2.后端代码的api框架</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8"><span class="toc-text">1.3.数据库表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8user%E5%AD%97%E6%AE%B5%E8%AF%B4%E6%98%8E"><span class="toc-text">表user字段说明</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-%E5%A4%84%E7%90%86%E8%AF%B7%E6%B1%82%E7%9A%84%E9%80%BB%E8%BE%91"><span class="toc-text">1.4.处理请求的逻辑</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-1tomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%A6%82%E4%BD%95%E6%8A%8A%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91%E5%88%B0%E5%AF%B9%E5%BA%94%E7%9A%84controller%E6%96%B9%E6%B3%95%EF%BC%9F"><span class="toc-text">1.4.1tomcat服务器如何把请求转发到对应的controller方法？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-2controller%E5%85%B7%E4%BD%93%E9%80%BB%E8%BE%91%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%B5%81%E7%A8%8B"><span class="toc-text">1.4.2controller具体逻辑的实现流程</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#4-2-1-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E6%B5%81%E7%A8%8B%E5%91%A2%EF%BC%9F%E7%9B%B4%E6%8E%A5%E6%8A%8A%E5%9C%A8controller%E6%96%87%E4%BB%B6%E4%B8%AD%E8%B0%83%E7%94%A8UserDao%E5%AE%9E%E7%8E%B0%E6%9F%A5%E8%AF%A2%E5%8F%AF%E4%BB%A5%E5%90%97"><span class="toc-text">4.2.1 为什么要有这么多流程呢？直接把在controller文件中调用UserDao实现查询可以吗</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-controller%E6%96%87%E4%BB%B6%E4%B8%AD%E5%AE%9E%E7%8E%B0api"><span class="toc-text">1.5 controller文件中实现api</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-5-1-%E4%B8%80%E8%88%AC%E7%9A%84api%EF%BC%8C%E7%AE%80%E5%8D%95%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5"><span class="toc-text">1.5.1 一般的api，简单的增删改查</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-5-1-1AdminPodController%EF%BC%9A%E7%AE%A1%E7%90%86%E5%91%98Pod%E7%AE%A1%E7%90%86api"><span class="toc-text">1.5.1.1AdminPodController：管理员Pod管理api</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-5-1-2AdminUserController%EF%BC%9A%E7%AE%A1%E7%90%86%E5%91%98%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86api%EF%BC%9A"><span class="toc-text">1.5.1.2AdminUserController：管理员用户管理api：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-5-1-3PodController%EF%BC%9A%E7%94%A8%E6%88%B7%E5%AF%B9pod%E7%9A%84%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82"><span class="toc-text">1.5.1.3PodController：用户对pod的功能需求</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-5-1-4UserController%EF%BC%9A%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C%E5%92%8C%E5%85%B6%E4%BB%96%E5%AF%B9%E8%87%AA%E5%B7%B1%E4%BF%A1%E6%81%AF%E7%9A%84%E7%AE%A1%E7%90%86"><span class="toc-text">1.5.1.4UserController：用户登录注册和其他对自己信息的管理</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-5-2-%E8%BE%83%E4%B8%BA%E5%A4%8D%E6%9D%82%E7%9A%84api%E9%80%BB%E8%BE%91%E5%88%86%E6%9E%90"><span class="toc-text">1.5.2 较为复杂的api逻辑分析</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-5-2-1-PodController%EF%BC%9A%E7%94%A8%E6%88%B7%E5%AF%B9pod%E7%9A%84%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82"><span class="toc-text">1.5.2.1 PodController：用户对pod的功能需求</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-5-2-2UserController%EF%BC%9A%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C%E5%92%8C%E5%85%B6%E4%BB%96%E5%AF%B9%E8%87%AA%E5%B7%B1%E4%BF%A1%E6%81%AF%E7%9A%84%E7%AE%A1%E7%90%86"><span class="toc-text">1.5.2.2UserController：用户登录注册和其他对自己信息的管理</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-6-kubevirt%E7%9B%B8%E5%85%B3api%E5%AE%9E%E7%8E%B0%E7%9A%84%E6%AD%A5%E9%AA%A4"><span class="toc-text">1.6. kubevirt相关api实现的步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-6-1-%E8%B5%B0%E9%80%9A%E4%BD%BF%E7%94%A8kubevirt%E8%BF%9B%E8%A1%8C%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E8%BF%87%E7%A8%8B%EF%BC%8C%E5%B9%B6%E9%80%89%E5%8F%96%E4%B8%80%E4%B8%AA%E6%9C%80%E7%BB%88%E5%AE%9E%E7%8E%B0%E7%9A%84%E6%96%B9%E6%A1%88"><span class="toc-text">1.6.1 走通使用kubevirt进行创建虚拟机的过程，并选取一个最终实现的方案</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-6-1-1%E5%B0%86%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%95%9C%E5%83%8F%E4%BC%A0%E7%BB%99pvc%EF%BC%8C%E7%84%B6%E5%90%8E%E4%BD%BF%E7%94%A8%E8%BF%99%E4%B8%AApvc%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAvm%EF%BC%88%E5%B7%B2%E5%AE%8C%E6%88%90%EF%BC%89"><span class="toc-text">1.6.1.1将虚拟机镜像传给pvc，然后使用这个pvc创建一个vm（已完成）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-6-1-2%E4%BD%BF%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8Bdatavolume%E6%9D%A5%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="toc-text">1.6.1.2使用数据类型datavolume来创建虚拟机</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-6-2-%E9%80%9A%E8%BF%87kubevirt%E6%8F%90%E4%BE%9B%E7%9A%84api%EF%BC%8C%E5%AE%9E%E7%8E%B0%E8%BF%99%E4%B8%AA%E6%96%B9%E6%A1%88"><span class="toc-text">1.6.2 通过kubevirt提供的api，实现这个方案</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-6-2-1-%E9%A6%96%E5%85%88%E8%A6%81%E5%AF%B9%E8%AF%B7%E6%B1%82%E8%BF%9B%E8%A1%8C%E9%89%B4%E6%9D%83%E9%85%8D%E7%BD%AE%EF%BC%88%E5%B7%B2%E5%AE%8C%E6%88%90%EF%BC%89"><span class="toc-text">1.6.2.1 首先要对请求进行鉴权配置（已完成）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-6-2-2-%E9%AA%8C%E8%AF%81%E5%B0%86pod%E9%85%8D%E7%BD%AE%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%BA%E8%AF%B7%E6%B1%82%E4%BD%93%E6%AD%A3%E5%B8%B8%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-text">1.6.2.2 验证将pod配置序列化为请求体正常发送请求的方法</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-6-3"><span class="toc-text">1.6.3</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%89%8D%E7%AB%AF"><span class="toc-text">2.前端</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E5%8C%85"><span class="toc-text">2.1前端代码包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2%E5%89%8D%E7%AB%AF%E6%96%87%E4%BB%B6%E7%9A%84%E6%9E%B6%E6%9E%84"><span class="toc-text">2.2前端文件的架构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%A1%86%E6%9E%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E"><span class="toc-text">3.框架的使用说明</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1NPM"><span class="toc-text">3.1NPM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2Vue"><span class="toc-text">3.2Vue</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3VueRouter"><span class="toc-text">3.3VueRouter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4axios"><span class="toc-text">3.4axios</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5ElementPlus"><span class="toc-text">3.5ElementPlus</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6Maven"><span class="toc-text">3.6Maven</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7SpringBoot"><span class="toc-text">3.7SpringBoot</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-8MyBatisPlus"><span class="toc-text">3.8MyBatisPlus</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-9-MySQL"><span class="toc-text">3.9 MySQL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-10SpringCloudKubernetes"><span class="toc-text">3.10SpringCloudKubernetes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-11-JWT"><span class="toc-text">3.11 JWT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-12-Lombok"><span class="toc-text">3.12 Lombok</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-13Swagger"><span class="toc-text">3.13Swagger</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-14Interceptor"><span class="toc-text">3.14Interceptor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-15HttpClient%EF%BC%88%E5%BD%93%E5%89%8D%E9%A1%B9%E7%9B%AE%E5%BC%83%E7%94%A8%EF%BC%89"><span class="toc-text">3.15HttpClient（当前项目弃用）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-16Nginx"><span class="toc-text">3.16Nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-17docker"><span class="toc-text">3.17docker</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%83%A8%E7%BD%B2"><span class="toc-text">4.部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E6%93%8D%E6%AD%A5%E9%AA%A4"><span class="toc-text">实操步骤</span></a></li></ol></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#K8S-WEB%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3"><span class="toc-text">K8S-WEB项目文档</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%89%8D%E7%BD%AE%E6%9C%AF%E8%AF%AD"><span class="toc-text">需要了解的前置术语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E7%AB%AF"><span class="toc-text">后端</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B4%E4%BD%93%E4%BB%A3%E7%A0%81%E5%8C%85%E7%B1%BB%E5%9E%8B%E8%A7%A3%E8%AF%BB"><span class="toc-text">整体代码包类型解读</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E7%AB%AF%E4%BB%A3%E7%A0%81%E7%9A%84api%E6%A1%86%E6%9E%B6"><span class="toc-text">后端代码的api框架</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8"><span class="toc-text">数据库表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8user%E5%AD%97%E6%AE%B5%E8%AF%B4%E6%98%8E"><span class="toc-text">表user字段说明</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%84%E7%90%86%E8%AF%B7%E6%B1%82%E7%9A%84%E9%80%BB%E8%BE%91"><span class="toc-text">处理请求的逻辑</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#tomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%A6%82%E4%BD%95%E6%8A%8A%E8%AF%B7%E6%B1%82%E8%BD%AC%E5%8F%91%E5%88%B0%E5%AF%B9%E5%BA%94%E7%9A%84controller%E6%96%B9%E6%B3%95%EF%BC%9F"><span class="toc-text">tomcat服务器如何把请求转发到对应的controller方法？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#controller%E5%85%B7%E4%BD%93%E9%80%BB%E8%BE%91%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%B5%81%E7%A8%8B"><span class="toc-text">controller具体逻辑的实现流程</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E6%B5%81%E7%A8%8B%E5%91%A2%EF%BC%9F%E7%9B%B4%E6%8E%A5%E6%8A%8A%E5%9C%A8controller%E6%96%87%E4%BB%B6%E4%B8%AD%E8%B0%83%E7%94%A8UserDao%E5%AE%9E%E7%8E%B0%E6%9F%A5%E8%AF%A2%E5%8F%AF%E4%BB%A5%E5%90%97"><span class="toc-text">为什么要有这么多流程呢？直接把在controller文件中调用UserDao实现查询可以吗</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#controller%E6%96%87%E4%BB%B6%E4%B8%AD%E5%AE%9E%E7%8E%B0api"><span class="toc-text">controller文件中实现api</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E7%9A%84api%EF%BC%8C%E7%AE%80%E5%8D%95%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5"><span class="toc-text">一般的api，简单的增删改查</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#AdminPodController%EF%BC%9A%E7%AE%A1%E7%90%86%E5%91%98Pod%E7%AE%A1%E7%90%86api"><span class="toc-text">AdminPodController：管理员Pod管理api</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#AdminUserController%EF%BC%9A%E7%AE%A1%E7%90%86%E5%91%98%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86api%EF%BC%9A"><span class="toc-text">AdminUserController：管理员用户管理api：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#PodController%EF%BC%9A%E7%94%A8%E6%88%B7%E5%AF%B9pod%E7%9A%84%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82"><span class="toc-text">PodController：用户对pod的功能需求</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#UserController%EF%BC%9A%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C%E5%92%8C%E5%85%B6%E4%BB%96%E5%AF%B9%E8%87%AA%E5%B7%B1%E4%BF%A1%E6%81%AF%E7%9A%84%E7%AE%A1%E7%90%86"><span class="toc-text">UserController：用户登录注册和其他对自己信息的管理</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BE%83%E4%B8%BA%E5%A4%8D%E6%9D%82%E7%9A%84api%E9%80%BB%E8%BE%91%E5%88%86%E6%9E%90"><span class="toc-text">较为复杂的api逻辑分析</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#PodController%EF%BC%9A%E7%94%A8%E6%88%B7%E5%AF%B9pod%E7%9A%84%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82-1"><span class="toc-text">PodController：用户对pod的功能需求</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#UserController%EF%BC%9A%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C%E5%92%8C%E5%85%B6%E4%BB%96%E5%AF%B9%E8%87%AA%E5%B7%B1%E4%BF%A1%E6%81%AF%E7%9A%84%E7%AE%A1%E7%90%86-1"><span class="toc-text">UserController：用户登录注册和其他对自己信息的管理</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#kubevirt%E7%9B%B8%E5%85%B3api%E5%AE%9E%E7%8E%B0%E7%9A%84%E6%AD%A5%E9%AA%A4"><span class="toc-text">kubevirt相关api实现的步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B5%B0%E9%80%9A%E4%BD%BF%E7%94%A8kubevirt%E8%BF%9B%E8%A1%8C%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E8%BF%87%E7%A8%8B%EF%BC%8C%E5%B9%B6%E9%80%89%E5%8F%96%E4%B8%80%E4%B8%AA%E6%9C%80%E7%BB%88%E5%AE%9E%E7%8E%B0%E7%9A%84%E6%96%B9%E6%A1%88"><span class="toc-text">~~ 走通使用kubevirt进行创建虚拟机的过程，并选取一个最终实现的方案~~</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B0%86%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%95%9C%E5%83%8F%E4%BC%A0%E7%BB%99pvc%EF%BC%8C%E7%84%B6%E5%90%8E%E4%BD%BF%E7%94%A8%E8%BF%99%E4%B8%AApvc%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAvm%EF%BC%88%E5%B7%B2%E5%AE%8C%E6%88%90%EF%BC%89"><span class="toc-text">将虚拟机镜像传给pvc，然后使用这个pvc创建一个vm（已完成）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8Bdatavolume%E6%9D%A5%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="toc-text">使用数据类型datavolume来创建虚拟机</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%9A%E8%BF%87kubevirt%E6%8F%90%E4%BE%9B%E7%9A%84api%EF%BC%8C%E5%AE%9E%E7%8E%B0%E8%BF%99%E4%B8%AA%E6%96%B9%E6%A1%88"><span class="toc-text">~~ 通过kubevirt提供的api，实现这个方案~~</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%A6%96%E5%85%88%E8%A6%81%E5%AF%B9%E8%AF%B7%E6%B1%82%E8%BF%9B%E8%A1%8C%E9%89%B4%E6%9D%83%E9%85%8D%E7%BD%AE%EF%BC%88%E5%B7%B2%E5%AE%8C%E6%88%90%EF%BC%89"><span class="toc-text">~~ 首先要对请求进行鉴权配置（已完成）~~</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%AA%8C%E8%AF%81%E5%B0%86pod%E9%85%8D%E7%BD%AE%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%BA%E8%AF%B7%E6%B1%82%E4%BD%93%E6%AD%A3%E5%B8%B8%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-text">~~ 验证将pod配置序列化为请求体正常发送请求的方法~~</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#kubevirt%E6%9C%80%E7%BB%88%E6%96%B9%E6%A1%88"><span class="toc-text">kubevirt最终方案</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF"><span class="toc-text">前端</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E5%8C%85"><span class="toc-text">前端代码包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E6%96%87%E4%BB%B6%E7%9A%84%E6%9E%B6%E6%9E%84"><span class="toc-text">前端文件的架构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A1%86%E6%9E%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E"><span class="toc-text">框架的使用说明</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#NPM"><span class="toc-text">NPM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vue"><span class="toc-text">Vue</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VueRouter"><span class="toc-text">VueRouter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#axios"><span class="toc-text">axios</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ElementPlus"><span class="toc-text">ElementPlus</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Maven"><span class="toc-text">Maven</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SpringBoot"><span class="toc-text">SpringBoot</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MyBatisPlus"><span class="toc-text">MyBatisPlus</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MySQL"><span class="toc-text">MySQL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SpringCloudKubernetes"><span class="toc-text">SpringCloudKubernetes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JWT"><span class="toc-text">JWT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Lombok"><span class="toc-text">Lombok</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Swagger"><span class="toc-text">Swagger</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Interceptor"><span class="toc-text">Interceptor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HttpClient%EF%BC%88%E5%BD%93%E5%89%8D%E9%A1%B9%E7%9B%AE%E5%BC%83%E7%94%A8%EF%BC%89"><span class="toc-text">HttpClient（当前项目弃用）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Nginx"><span class="toc-text">Nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker"><span class="toc-text">docker</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2"><span class="toc-text">部署</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E6%93%8D%E6%AD%A5%E9%AA%A4"><span class="toc-text">实操步骤</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -618,7 +630,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="K8S-WEB项目文档"><a href="#K8S-WEB项目文档" class="headerlink" title="K8S-WEB项目文档"></a>K8S-WEB项目文档</h1><h2 id="0-需要了解的前置术语"><a href="#0-需要了解的前置术语" class="headerlink" title="0.需要了解的前置术语"></a>0.需要了解的前置术语</h2><ul>
+        <h1 id="K8S-WEB项目文档"><a href="#K8S-WEB项目文档" class="headerlink" title="K8S-WEB项目文档"></a>K8S-WEB项目文档</h1><h2 id="需要了解的前置术语"><a href="#需要了解的前置术语" class="headerlink" title="需要了解的前置术语"></a>需要了解的前置术语</h2><ul>
 <li>前端：进行数据渲染和展示的部分。通常使用HTML CSS JavaScript实现</li>
 <li>后端：对数据进行增删改查，提供服务的部分</li>
 <li>VUE：前端框架，将HTML CSS JavaScript 整合到一个页面，便于开发</li>
@@ -645,7 +657,7 @@
 <li>Kubernetes</li>
 <li>Kubevirt</li>
 </ul>
-<h2 id="1-后端"><a href="#1-后端" class="headerlink" title="1.后端"></a>1.后端</h2><h3 id="1-1-整体代码包类型解读"><a href="#1-1-整体代码包类型解读" class="headerlink" title="1.1.整体代码包类型解读"></a>1.1.整体代码包类型解读</h3><img src="http://gohoy.top/i/2023/08/04/p6aqbg-1.png" alt="image-20230804152221174" style="zoom:80%;" />
+<h2 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h2><h3 id="整体代码包类型解读"><a href="#整体代码包类型解读" class="headerlink" title="整体代码包类型解读"></a>整体代码包类型解读</h3><img src="http://gohoy.top/i/2023/08/04/p6aqbg-1.png" alt="image-20230804152221174" style="zoom:80%;" />
 
 <p><strong>可以很粗略的认为：所有其他的类都是为controller文件服务的</strong></p>
 <ul>
@@ -668,11 +680,11 @@
 </li>
 <li>pom.xml：图中没有展示，这个文件是maven管理工具的配置文件，使用maven来控制依赖版本</li>
 </ul>
-<h3 id="1-2-后端代码的api框架"><a href="#1-2-后端代码的api框架" class="headerlink" title="1.2.后端代码的api框架"></a>1.2.后端代码的api框架</h3><img src="http://gohoy.top/i/2023/08/01/qoznsh-1.png" alt="系统结构功能图"  />
+<h3 id="后端代码的api框架"><a href="#后端代码的api框架" class="headerlink" title="后端代码的api框架"></a>后端代码的api框架</h3><img src="http://gohoy.top/i/2023/08/01/qoznsh-1.png" alt="系统结构功能图"  />
 
 <p>分别对应了代码的controller部分</p>
 <p><img src="http://gohoy.top/i/2023/08/04/r3vqkm-1.png" alt="image-20230804163908243"></p>
-<h3 id="1-3-数据库表"><a href="#1-3-数据库表" class="headerlink" title="1.3.数据库表"></a>1.3.数据库表</h3><p>数据库名称为：k8s</p>
+<h3 id="数据库表"><a href="#数据库表" class="headerlink" title="数据库表"></a>数据库表</h3><p>数据库名称为：k8s</p>
 <p>只有一张表：users，文件见resource&#x2F;k8s-users.mysql</p>
 <h4 id="表user字段说明"><a href="#表user字段说明" class="headerlink" title="表user字段说明"></a>表user字段说明</h4><table>
 <thead>
@@ -753,9 +765,9 @@
 <td></td>
 </tr>
 </tbody></table>
-<h3 id="1-4-处理请求的逻辑"><a href="#1-4-处理请求的逻辑" class="headerlink" title="1.4.处理请求的逻辑"></a>1.4.处理请求的逻辑</h3><img src="http://gohoy.top/i/2023/08/04/r5tcvh-1.png" alt="image-20230804152329594" style="zoom: 67%;" />
+<h3 id="处理请求的逻辑"><a href="#处理请求的逻辑" class="headerlink" title="处理请求的逻辑"></a>处理请求的逻辑</h3><img src="http://gohoy.top/i/2023/08/04/r5tcvh-1.png" alt="image-20230804152329594" style="zoom: 67%;" />
 
-<h4 id="1-4-1tomcat服务器如何把请求转发到对应的controller方法？"><a href="#1-4-1tomcat服务器如何把请求转发到对应的controller方法？" class="headerlink" title="1.4.1tomcat服务器如何把请求转发到对应的controller方法？"></a>1.4.1tomcat服务器如何把请求转发到对应的controller方法？</h4><p>接下来以用户登录方法为例</p>
+<h4 id="tomcat服务器如何把请求转发到对应的controller方法？"><a href="#tomcat服务器如何把请求转发到对应的controller方法？" class="headerlink" title="tomcat服务器如何把请求转发到对应的controller方法？"></a>tomcat服务器如何把请求转发到对应的controller方法？</h4><p>接下来以用户登录方法为例</p>
 <p>我们假设后端服务器的BASE_URL是<a target="_blank" rel="noopener" href="http://localhost:8080/">http://localhost:8080/</a></p>
 <ul>
 <li><p>前端使用POST请求访问了<a target="_blank" rel="noopener" href="http://localhost:8080/user/login%EF%BC%8C%E5%B9%B6%E4%B8%94%E6%90%BA%E5%B8%A6%E4%BA%86%E7%94%A8%E6%88%B7%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF">http://localhost:8080/user/login，并且携带了用户的基本信息</a></p>
@@ -804,7 +816,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="1-4-2controller具体逻辑的实现流程"><a href="#1-4-2controller具体逻辑的实现流程" class="headerlink" title="1.4.2controller具体逻辑的实现流程"></a>1.4.2controller具体逻辑的实现流程</h4><p>以根据用户名获取用户数据这个api为例</p>
+<h4 id="controller具体逻辑的实现流程"><a href="#controller具体逻辑的实现流程" class="headerlink" title="controller具体逻辑的实现流程"></a>controller具体逻辑的实现流程</h4><p>以根据用户名获取用户数据这个api为例</p>
 <p><img src="http://gohoy.top/i/2023/08/04/r6hzsn-1.png" alt="image-20230804164347717"></p>
 <ul>
 <li>它的返回值是CommonResult，这是我自定义的类（utils&#x2F;CommonResult.class），用于规范像前端返回的数据格式。</li>
@@ -823,9 +835,9 @@
 </ul>
 </li>
 </ul>
-<h5 id="4-2-1-为什么要有这么多流程呢？直接把在controller文件中调用UserDao实现查询可以吗"><a href="#4-2-1-为什么要有这么多流程呢？直接把在controller文件中调用UserDao实现查询可以吗" class="headerlink" title="4.2.1 为什么要有这么多流程呢？直接把在controller文件中调用UserDao实现查询可以吗"></a>4.2.1 为什么要有这么多流程呢？直接把在controller文件中调用UserDao实现查询可以吗</h5><p>分出controller service dao三层是后端开发的规范，在比较复杂的后端逻辑时可以理清思路，便于实现。</p>
+<h5 id="为什么要有这么多流程呢？直接把在controller文件中调用UserDao实现查询可以吗"><a href="#为什么要有这么多流程呢？直接把在controller文件中调用UserDao实现查询可以吗" class="headerlink" title="为什么要有这么多流程呢？直接把在controller文件中调用UserDao实现查询可以吗"></a>为什么要有这么多流程呢？直接把在controller文件中调用UserDao实现查询可以吗</h5><p>分出controller service dao三层是后端开发的规范，在比较复杂的后端逻辑时可以理清思路，便于实现。</p>
 <p>所以简单的业务逻辑是可以直接在controller实现的。</p>
-<h3 id="1-5-controller文件中实现api"><a href="#1-5-controller文件中实现api" class="headerlink" title="1.5 controller文件中实现api"></a>1.5 controller文件中实现api</h3><h4 id="1-5-1-一般的api，简单的增删改查"><a href="#1-5-1-一般的api，简单的增删改查" class="headerlink" title="1.5.1 一般的api，简单的增删改查"></a>1.5.1 一般的api，简单的增删改查</h4><h5 id="1-5-1-1AdminPodController：管理员Pod管理api"><a href="#1-5-1-1AdminPodController：管理员Pod管理api" class="headerlink" title="1.5.1.1AdminPodController：管理员Pod管理api"></a>1.5.1.1<code>AdminPodController</code>：管理员Pod管理api</h5><ul>
+<h3 id="controller文件中实现api"><a href="#controller文件中实现api" class="headerlink" title="controller文件中实现api"></a>controller文件中实现api</h3><h4 id="一般的api，简单的增删改查"><a href="#一般的api，简单的增删改查" class="headerlink" title="一般的api，简单的增删改查"></a>一般的api，简单的增删改查</h4><h5 id="AdminPodController：管理员Pod管理api"><a href="#AdminPodController：管理员Pod管理api" class="headerlink" title="AdminPodController：管理员Pod管理api"></a><code>AdminPodController</code>：管理员Pod管理api</h5><ul>
 <li><code>/getAllPods/&#123;type&#125;)</code>：获取所有pod信息<ul>
 <li>使用kubernetesClient获取所有pod，将pod进行筛选，除去系统pod</li>
 <li>将剩下的pod每一个都构建成PodInfo的对象，返回List<PodInfo></li>
@@ -838,22 +850,22 @@
 <li><code>/setVMDefaultResource/</code>：与<code>/setCtrDefaultResource/</code>同理</li>
 <li><code>/getDefaultConfig/&#123;type&#125;</code>：根据字符串type获取不同的configMap</li>
 </ul>
-<h5 id="1-5-1-2AdminUserController：管理员用户管理api："><a href="#1-5-1-2AdminUserController：管理员用户管理api：" class="headerlink" title="1.5.1.2AdminUserController：管理员用户管理api："></a>1.5.1.2<code>AdminUserController</code>：管理员用户管理api：</h5><ul>
+<h5 id="AdminUserController：管理员用户管理api："><a href="#AdminUserController：管理员用户管理api：" class="headerlink" title="AdminUserController：管理员用户管理api："></a><code>AdminUserController</code>：管理员用户管理api：</h5><ul>
 <li><code>/getUserByName/&#123;username&#125;</code>：通过用户名从数据库查询该用户的信息</li>
 <li><code>/getUsersByPage/&#123;pageNum&#125;/&#123;pageSize&#125;</code>：分页获取全部用户，使用了MyBatisPlus内置的分页方法。</li>
 <li><code>/updateUser</code>：更新用户信息</li>
 <li><code>/deleteUser/&#123;id&#125;</code>：通过id删除用户</li>
 </ul>
-<h5 id="1-5-1-3PodController：用户对pod的功能需求"><a href="#1-5-1-3PodController：用户对pod的功能需求" class="headerlink" title="1.5.1.3PodController：用户对pod的功能需求"></a>1.5.1.3<code>PodController</code>：用户对pod的功能需求</h5><ul>
+<h5 id="PodController：用户对pod的功能需求"><a href="#PodController：用户对pod的功能需求" class="headerlink" title="PodController：用户对pod的功能需求"></a><code>PodController</code>：用户对pod的功能需求</h5><ul>
 <li><code>/selectPodByUserName/&#123;username&#125;</code>：通过用户名查询该用户所拥有的pod。因为pod创建的时候的名称都是username-type-job-random的形式，这里通过把所有的pod导出，遍历筛选的方法获得目标。</li>
 <li><code>/deletePod/&#123;podName&#125;</code>：通过pod名称来删除pod</li>
 </ul>
-<h5 id="1-5-1-4UserController：用户登录注册和其他对自己信息的管理"><a href="#1-5-1-4UserController：用户登录注册和其他对自己信息的管理" class="headerlink" title="1.5.1.4UserController：用户登录注册和其他对自己信息的管理"></a>1.5.1.4<code>UserController</code>：用户登录注册和其他对自己信息的管理</h5><ul>
+<h5 id="UserController：用户登录注册和其他对自己信息的管理"><a href="#UserController：用户登录注册和其他对自己信息的管理" class="headerlink" title="UserController：用户登录注册和其他对自己信息的管理"></a><code>UserController</code>：用户登录注册和其他对自己信息的管理</h5><ul>
 <li><code>/register</code>：传入用户名，密码，只要数据库中没有这个用户就进行插入。</li>
 <li><code>/getUserDTO/&#123;username&#125;</code>：通过用户名，获取除了密码以外的所有信息。</li>
 <li><code>/getIndex</code>：前端主页显示的内容，通过此处获取index.md进行展示</li>
 </ul>
-<h4 id="1-5-2-较为复杂的api逻辑分析"><a href="#1-5-2-较为复杂的api逻辑分析" class="headerlink" title="1.5.2 较为复杂的api逻辑分析"></a>1.5.2 较为复杂的api逻辑分析</h4><h5 id="1-5-2-1-PodController：用户对pod的功能需求"><a href="#1-5-2-1-PodController：用户对pod的功能需求" class="headerlink" title="1.5.2.1 PodController：用户对pod的功能需求"></a>1.5.2.1 <code>PodController</code>：用户对pod的功能需求</h5><ul>
+<h4 id="较为复杂的api逻辑分析"><a href="#较为复杂的api逻辑分析" class="headerlink" title="较为复杂的api逻辑分析"></a>较为复杂的api逻辑分析</h4><h5 id="PodController：用户对pod的功能需求-1"><a href="#PodController：用户对pod的功能需求-1" class="headerlink" title="PodController：用户对pod的功能需求"></a><code>PodController</code>：用户对pod的功能需求</h5><ul>
 <li><code>/createCtr/&#123;username&#125;</code>：用户开启一个pod<ul>
 <li>使用username获取用户信息，判断用户是否还有可用的pod数量。</li>
 <li>从configmap中获取该类型pod的资源数量</li>
@@ -863,7 +875,7 @@
 </li>
 <li><code>/createVm/&#123;username&#125;</code>：TODO</li>
 </ul>
-<h5 id="1-5-2-2UserController：用户登录注册和其他对自己信息的管理"><a href="#1-5-2-2UserController：用户登录注册和其他对自己信息的管理" class="headerlink" title="1.5.2.2UserController：用户登录注册和其他对自己信息的管理"></a>1.5.2.2<code>UserController</code>：用户登录注册和其他对自己信息的管理</h5><ul>
+<h5 id="UserController：用户登录注册和其他对自己信息的管理-1"><a href="#UserController：用户登录注册和其他对自己信息的管理-1" class="headerlink" title="UserController：用户登录注册和其他对自己信息的管理"></a><code>UserController</code>：用户登录注册和其他对自己信息的管理</h5><ul>
 <li><code>/login</code>：用户登录，传入username和password<ul>
 <li>首先验证用户名密码是否正确</li>
 <li>然后按照用户的username，isAdmin属性来使用jwt生成一个token。过期时间默认一周</li>
@@ -872,13 +884,13 @@
 </ul>
 </li>
 </ul>
-<h3 id="1-6-kubevirt相关api实现的步骤"><a href="#1-6-kubevirt相关api实现的步骤" class="headerlink" title="1.6. kubevirt相关api实现的步骤"></a>1.6. kubevirt相关api实现的步骤</h3><h4 id="1-6-1-走通使用kubevirt进行创建虚拟机的过程，并选取一个最终实现的方案"><a href="#1-6-1-走通使用kubevirt进行创建虚拟机的过程，并选取一个最终实现的方案" class="headerlink" title="1.6.1 走通使用kubevirt进行创建虚拟机的过程，并选取一个最终实现的方案"></a><del>1.6.1 走通使用kubevirt进行创建虚拟机的过程，并选取一个最终实现的方案</del></h4><h5 id="1-6-1-1将虚拟机镜像传给pvc，然后使用这个pvc创建一个vm（已完成）"><a href="#1-6-1-1将虚拟机镜像传给pvc，然后使用这个pvc创建一个vm（已完成）" class="headerlink" title="1.6.1.1将虚拟机镜像传给pvc，然后使用这个pvc创建一个vm（已完成）"></a><del>1.6.1.1将虚拟机镜像传给pvc，然后使用这个pvc创建一个vm（已完成）</del></h5><h5 id="1-6-1-2使用数据类型datavolume来创建虚拟机"><a href="#1-6-1-2使用数据类型datavolume来创建虚拟机" class="headerlink" title="1.6.1.2使用数据类型datavolume来创建虚拟机"></a><del>1.6.1.2使用数据类型datavolume来创建虚拟机</del></h5><p><del>优势：可以通过一个模板来clone虚拟机。通过快照来保存虚拟机的数据</del></p>
+<h3 id="kubevirt相关api实现的步骤"><a href="#kubevirt相关api实现的步骤" class="headerlink" title="kubevirt相关api实现的步骤"></a>kubevirt相关api实现的步骤</h3><h4 id="走通使用kubevirt进行创建虚拟机的过程，并选取一个最终实现的方案"><a href="#走通使用kubevirt进行创建虚拟机的过程，并选取一个最终实现的方案" class="headerlink" title="~~ 走通使用kubevirt进行创建虚拟机的过程，并选取一个最终实现的方案~~"></a>~~ 走通使用kubevirt进行创建虚拟机的过程，并选取一个最终实现的方案~~</h4><h5 id="将虚拟机镜像传给pvc，然后使用这个pvc创建一个vm（已完成）"><a href="#将虚拟机镜像传给pvc，然后使用这个pvc创建一个vm（已完成）" class="headerlink" title="将虚拟机镜像传给pvc，然后使用这个pvc创建一个vm（已完成）"></a><del>将虚拟机镜像传给pvc，然后使用这个pvc创建一个vm（已完成）</del></h5><h5 id="使用数据类型datavolume来创建虚拟机"><a href="#使用数据类型datavolume来创建虚拟机" class="headerlink" title="使用数据类型datavolume来创建虚拟机"></a><del>使用数据类型datavolume来创建虚拟机</del></h5><p><del>优势：可以通过一个模板来clone虚拟机。通过快照来保存虚拟机的数据</del></p>
 <p><del>但是从来没有用过这种方法。可行性待验证</del></p>
-<h4 id="1-6-2-通过kubevirt提供的api，实现这个方案"><a href="#1-6-2-通过kubevirt提供的api，实现这个方案" class="headerlink" title="1.6.2 通过kubevirt提供的api，实现这个方案"></a><del>1.6.2 通过kubevirt提供的api，实现这个方案</del></h4><h5 id="1-6-2-1-首先要对请求进行鉴权配置（已完成）"><a href="#1-6-2-1-首先要对请求进行鉴权配置（已完成）" class="headerlink" title="1.6.2.1 首先要对请求进行鉴权配置（已完成）"></a><del>1.6.2.1 首先要对请求进行鉴权配置（已完成）</del></h5><p><del>k8s默认api需要进行证书验证。所以如果直接访问api地址会被拦截。</del></p>
+<h4 id="通过kubevirt提供的api，实现这个方案"><a href="#通过kubevirt提供的api，实现这个方案" class="headerlink" title="~~ 通过kubevirt提供的api，实现这个方案~~"></a>~~ 通过kubevirt提供的api，实现这个方案~~</h4><h5 id="首先要对请求进行鉴权配置（已完成）"><a href="#首先要对请求进行鉴权配置（已完成）" class="headerlink" title="~~ 首先要对请求进行鉴权配置（已完成）~~"></a>~~ 首先要对请求进行鉴权配置（已完成）~~</h5><p><del>k8s默认api需要进行证书验证。所以如果直接访问api地址会被拦截。</del></p>
 <p><del>我仿照kubernetesClient进行了证书验证的操作。此项已完成</del></p>
-<h5 id="1-6-2-2-验证将pod配置序列化为请求体正常发送请求的方法"><a href="#1-6-2-2-验证将pod配置序列化为请求体正常发送请求的方法" class="headerlink" title="1.6.2.2 验证将pod配置序列化为请求体正常发送请求的方法"></a><del>1.6.2.2 验证将pod配置序列化为请求体正常发送请求的方法</del></h5><p><del>因为在api中，pod的配置全部都被放在请求体中，而Java存储这些配置的方法是生成一个类。</del></p>
+<h5 id="验证将pod配置序列化为请求体正常发送请求的方法"><a href="#验证将pod配置序列化为请求体正常发送请求的方法" class="headerlink" title="~~ 验证将pod配置序列化为请求体正常发送请求的方法~~"></a>~~ 验证将pod配置序列化为请求体正常发送请求的方法~~</h5><p><del>因为在api中，pod的配置全部都被放在请求体中，而Java存储这些配置的方法是生成一个类。</del></p>
 <p><del>这里需要去验证如何把类中的数据正确传递给k8s</del></p>
-<h4 id="1-6-3"><a href="#1-6-3" class="headerlink" title="1.6.3"></a>1.6.3</h4><p>使用脚本监听文件修改，通过监听文件修改来执行kubectl命令来进行虚拟机操作（当前使用的方案）</p>
+<h4 id="kubevirt最终方案"><a href="#kubevirt最终方案" class="headerlink" title="kubevirt最终方案"></a>kubevirt最终方案</h4><p>使用脚本监听文件修改，通过监听文件修改来执行kubectl命令来进行虚拟机操作（当前使用的方案）</p>
 <pre><code class="sh">#!/bin/bash
 
 # 目标目录
@@ -931,7 +943,7 @@ inotifywait -m -e create -e moved_to &quot;$target_directory&quot; |
 
     done
 </code></pre>
-<h2 id="2-前端"><a href="#2-前端" class="headerlink" title="2.前端"></a>2.前端</h2><h3 id="2-1前端代码包"><a href="#2-1前端代码包" class="headerlink" title="2.1前端代码包"></a>2.1前端代码包</h3><p><img src="http://gohoy.top/i/2023/08/14/qm6mnh-1.png" alt="image-20230814160921521"></p>
+<h2 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h2><h3 id="前端代码包"><a href="#前端代码包" class="headerlink" title="前端代码包"></a>前端代码包</h3><p><img src="http://gohoy.top/i/2023/08/14/qm6mnh-1.png" alt="image-20230814160921521"></p>
 <ul>
 <li>node_modules：所有前端组件的目录。由npm管理</li>
 <li>public：放一些公共文件，比如网站的头像，index.html</li>
@@ -945,18 +957,18 @@ inotifywait -m -e create -e moved_to &quot;$target_directory&quot; |
 </ul>
 </li>
 </ul>
-<h3 id="2-2前端文件的架构"><a href="#2-2前端文件的架构" class="headerlink" title="2.2前端文件的架构"></a>2.2前端文件的架构</h3><img src="http://gohoy.top/i/2023/08/14/qqtpor-1.png" alt="image-20230814161708391" style="zoom:67%;" />
+<h3 id="前端文件的架构"><a href="#前端文件的架构" class="headerlink" title="前端文件的架构"></a>前端文件的架构</h3><img src="http://gohoy.top/i/2023/08/14/qqtpor-1.png" alt="image-20230814161708391" style="zoom:67%;" />
 
 <p>页面的入口是App.vue</p>
 <p>App.vue中的<code>   &lt;router-view&gt;&lt;/router-view&gt;</code>是这个页面被渲染的地方。</p>
-<h2 id="3-框架的使用说明"><a href="#3-框架的使用说明" class="headerlink" title="3.框架的使用说明"></a>3.框架的使用说明</h2><h3 id="3-1NPM"><a href="#3-1NPM" class="headerlink" title="3.1NPM"></a>3.1NPM</h3><p>NodeJs提供的包管理工具</p>
+<h2 id="框架的使用说明"><a href="#框架的使用说明" class="headerlink" title="框架的使用说明"></a>框架的使用说明</h2><h3 id="NPM"><a href="#NPM" class="headerlink" title="NPM"></a>NPM</h3><p>NodeJs提供的包管理工具</p>
 <p>npm install <packageName> 安装某个包</p>
 <p>npm install 按照npm的配置文件package.json来安装所有依赖</p>
 <p>在前端项目中，需要Node注意版本。</p>
 <p>npm run <option> 将项目运行，一般会有 serve 和build 选项。前者用于开发。后者将项目打包，用于部署</p>
-<h3 id="3-2Vue"><a href="#3-2Vue" class="headerlink" title="3.2Vue"></a>3.2Vue</h3><p>vue ui：开启一个webCli来进行vue项目管理</p>
+<h3 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h3><p>vue ui：开启一个webCli来进行vue项目管理</p>
 <p>vue init <packageName> 创建一个vue项目（可以在web页面进行）</p>
-<h3 id="3-3VueRouter"><a href="#3-3VueRouter" class="headerlink" title="3.3VueRouter"></a>3.3VueRouter</h3><pre><code class="sh">npm install vue-router
+<h3 id="VueRouter"><a href="#VueRouter" class="headerlink" title="VueRouter"></a>VueRouter</h3><pre><code class="sh">npm install vue-router
 //在创建vue项目的时候可以选择直接安装
 </code></pre>
 <p>用于页面跳转，整合在整个vue项目中。</p>
@@ -987,7 +999,7 @@ const app = createApp(App);
 app.use(router).mount(&#39;#app&#39;)
 </code></pre>
 <p>这样之后，就可以访问项目地址&#x2F;index进入页面IndexView</p>
-<h3 id="3-4axios"><a href="#3-4axios" class="headerlink" title="3.4axios"></a>3.4axios</h3><pre><code class="sh">npm insatll axios
+<h3 id="axios"><a href="#axios" class="headerlink" title="axios"></a>axios</h3><pre><code class="sh">npm insatll axios
 </code></pre>
 <p>用于发送http请求</p>
 <pre><code class="js">import &#123; createApp &#125; from &#39;vue&#39;
@@ -1033,8 +1045,8 @@ app.use(router).mount(&#39;#app&#39;)
         &#125;,
 </code></pre>
 <p>这里使用post请求访问<a target="_blank" rel="noopener" href="http://localhost:8080/user/login%EF%BC%8C%E5%B9%B6%E5%9C%A8requestBody%E4%B8%AD%E6%90%BA%E5%B8%A6%E4%BA%86%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E4%BF%A1%E6%81%AF%E3%80%82%E5%B9%B6%E5%B0%86%E5%BE%97%E5%88%B0%E7%9A%84%E8%BF%94%E5%9B%9E%E5%80%BC%E6%94%BE%E5%9C%A8response%E4%B8%AD%E3%80%82%E4%B9%8B%E5%90%8E%E8%BF%9B%E8%A1%8C%E6%93%8D%E4%BD%9C">http://localhost:8080/user/login，并在requestBody中携带了用户登录信息。并将得到的返回值放在response中。之后进行操作</a></p>
-<h3 id="3-5ElementPlus"><a href="#3-5ElementPlus" class="headerlink" title="3.5ElementPlus"></a>3.5ElementPlus</h3><p><a target="_blank" rel="noopener" href="https://element-plus.org/zh-CN/guide/quickstart.html#%E7%94%A8%E6%B3%95">查看官方使用文档</a></p>
-<h3 id="3-6Maven"><a href="#3-6Maven" class="headerlink" title="3.6Maven"></a>3.6Maven</h3><p>包配置文件在项目根目录的pom.xml中</p>
+<h3 id="ElementPlus"><a href="#ElementPlus" class="headerlink" title="ElementPlus"></a>ElementPlus</h3><p><a target="_blank" rel="noopener" href="https://element-plus.org/zh-CN/guide/quickstart.html#%E7%94%A8%E6%B3%95">查看官方使用文档</a></p>
+<h3 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h3><p>包配置文件在项目根目录的pom.xml中</p>
 <p>基本示例</p>
 <pre><code class="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
@@ -1086,7 +1098,7 @@ app.use(router).mount(&#39;#app&#39;)
       &lt;/mirror&gt;
 </code></pre>
 <p>在mirrors标签中加入这些即可</p>
-<h3 id="3-7SpringBoot"><a href="#3-7SpringBoot" class="headerlink" title="3.7SpringBoot"></a>3.7SpringBoot</h3><p>Maven包设置：</p>
+<h3 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h3><p>Maven包设置：</p>
 <pre><code class="xml">    &lt;dependency&gt;
             &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
             &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
@@ -1118,7 +1130,7 @@ public class K8sWebMainApplication &#123;
 <p>可能会需要其他配置。在类名前加上不同的注解。</p>
 <p>运行这个类，SpringBoot就会在指定端口开启一个tomcat服务器用来接收http请求。（默认8080）</p>
 <p>配置文件默认在项目根目录&#x2F;resources&#x2F;application.yaml（或者application.application）</p>
-<h3 id="3-8MyBatisPlus"><a href="#3-8MyBatisPlus" class="headerlink" title="3.8MyBatisPlus"></a>3.8MyBatisPlus</h3><p>Maven包引用</p>
+<h3 id="MyBatisPlus"><a href="#MyBatisPlus" class="headerlink" title="MyBatisPlus"></a>MyBatisPlus</h3><p>Maven包引用</p>
 <pre><code class="xml">    &lt;dependency&gt;
             &lt;groupId&gt;com.baomidou&lt;/groupId&gt;
             &lt;artifactId&gt;mybatis-plus-boot-starter&lt;/artifactId&gt;
@@ -1147,7 +1159,7 @@ public interface UserService extends IService&lt;User&gt; &#123;
 public class UserServiceImpl extends ServiceImpl&lt;UserDao , User&gt; implements UserService &#123;
 &#125;
 </code></pre>
-<h3 id="3-9-MySQL"><a href="#3-9-MySQL" class="headerlink" title="3.9 MySQL"></a>3.9 MySQL</h3><p>这里准备使用docker来启动</p>
+<h3 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h3><p>这里准备使用docker来启动</p>
 <p><code>docker run --name mysql  --restart=always -p 3306:3306 \ -e &quot;MYSQL_ROOT_PASSWORD=040424&quot; mysql </code></p>
 <p>修改远程连接：<code>update user set host=&#39;*&#39; where user=&#39;root&#39;&amp;&amp; host=&#39;localhost&#39;; flush privileges;</code></p>
 <p>然后使用可视化工具比如MySQLWorkBrench来进行表的设计和操作。</p>
@@ -1166,7 +1178,7 @@ public class UserServiceImpl extends ServiceImpl&lt;UserDao , User&gt; implement
 </code></pre>
 <p>这里主要要配置url。</p>
 <p>在这里配置之后，MyBatisPlus的curd操作就能够找到数据源</p>
-<h3 id="3-10SpringCloudKubernetes"><a href="#3-10SpringCloudKubernetes" class="headerlink" title="3.10SpringCloudKubernetes"></a>3.10SpringCloudKubernetes</h3><p>Maven 配置</p>
+<h3 id="SpringCloudKubernetes"><a href="#SpringCloudKubernetes" class="headerlink" title="SpringCloudKubernetes"></a>SpringCloudKubernetes</h3><p>Maven 配置</p>
 <pre><code class="xml">        &lt;dependency&gt;
             &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
             &lt;artifactId&gt;spring-cloud-starter-kubernetes-fabric8-all&lt;/artifactId&gt;
@@ -1207,7 +1219,7 @@ public class KubernetesConfig &#123;
    kubernetesClient.resource(config).createOrReplace();
 </code></pre>
 <p>这段代码使用kubernetesClient创建了一个namespace config</p>
-<h3 id="3-11-JWT"><a href="#3-11-JWT" class="headerlink" title="3.11 JWT"></a>3.11 JWT</h3><p>用来生成token，来进行鉴权</p>
+<h3 id="JWT"><a href="#JWT" class="headerlink" title="JWT"></a>JWT</h3><p>用来生成token，来进行鉴权</p>
 <p>Maven配置</p>
 <pre><code class="xml">        &lt;dependency&gt;
             &lt;groupId&gt;io.jsonwebtoken&lt;/groupId&gt;
@@ -1280,7 +1292,7 @@ public class JWTUtils &#123;
 </ul>
 <p>基本使用：</p>
 <p>在登录成功后生成一个token，在接收到前端的请求时，使用token进行鉴权。</p>
-<h3 id="3-12-Lombok"><a href="#3-12-Lombok" class="headerlink" title="3.12 Lombok"></a>3.12 Lombok</h3><p>用来快速生成类的get set方法，快速标记链式编程等</p>
+<h3 id="Lombok"><a href="#Lombok" class="headerlink" title="Lombok"></a>Lombok</h3><p>用来快速生成类的get set方法，快速标记链式编程等</p>
 <p>Maven配置：</p>
 <pre><code class="xml">        &lt;dependency&gt;
             &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;
@@ -1313,7 +1325,7 @@ public class User  extends UserDTO&#123;
 </code></pre>
 <p>直接注解@Data</p>
 <p>自动为下面的属性id 和password生成get set方法</p>
-<h3 id="3-13Swagger"><a href="#3-13Swagger" class="headerlink" title="3.13Swagger"></a>3.13Swagger</h3><p>Maven配置</p>
+<h3 id="Swagger"><a href="#Swagger" class="headerlink" title="Swagger"></a>Swagger</h3><p>Maven配置</p>
 <pre><code class="xm">        &lt;dependency&gt;
             &lt;groupId&gt;org.springdoc&lt;/groupId&gt;
             &lt;artifactId&gt;springdoc-openapi-starter-webmvc-ui&lt;/artifactId&gt;
@@ -1361,7 +1373,7 @@ public class AdminUserController &#123;
 <p>@ApiResponses：标记这个类是定义了很多api</p>
 <p>@ApiResponse（description&#x3D;”这里是api的描述”）：标记这个方法是一个api</p>
 <p>然后在项目运行的url，例如：localhost:8080&#x2F;swagger-ui.html可以查看这些api，并且可以进行测试</p>
-<h3 id="3-14Interceptor"><a href="#3-14Interceptor" class="headerlink" title="3.14Interceptor"></a>3.14Interceptor</h3><p>Maven配置</p>
+<h3 id="Interceptor"><a href="#Interceptor" class="headerlink" title="Interceptor"></a>Interceptor</h3><p>Maven配置</p>
 <pre><code class="xml">&lt;!--		servlet--&gt;
         &lt;dependency&gt;
             &lt;groupId&gt;javax.servlet&lt;/groupId&gt;
@@ -1422,7 +1434,7 @@ public class InterceptorConfig implements WebMvcConfigurer &#123;
 &#125;
 </code></pre>
 <p>这里exludePathPatterns是排除的路径，防止登录注册和swagger页面不能进入。</p>
-<h3 id="3-15HttpClient（当前项目弃用）"><a href="#3-15HttpClient（当前项目弃用）" class="headerlink" title="3.15HttpClient（当前项目弃用）"></a>3.15HttpClient（当前项目弃用）</h3><p>用来发送http请求。</p>
+<h3 id="HttpClient（当前项目弃用）"><a href="#HttpClient（当前项目弃用）" class="headerlink" title="HttpClient（当前项目弃用）"></a>HttpClient（当前项目弃用）</h3><p>用来发送http请求。</p>
 <p>使用的原因：Kubevirt的Api没有整合好的Java包，需要自己进行http请求</p>
 <p>Maven配置：</p>
 <pre><code class="xml">        &lt;dependency&gt;
@@ -1661,10 +1673,10 @@ private TrustManager[] trustManagers;
 <p>2.调用kubevirt Api（弃用）</p>
 <p>遇到的困难：缺少一个完整kubevirt环境进行测试。</p>
 <p>3.实现kubevirt的方案：使用脚本监听文件修改来执行sh命令。</p>
-<h3 id="3-16Nginx"><a href="#3-16Nginx" class="headerlink" title="3.16Nginx"></a>3.16Nginx</h3><p>在部署的环境使用，可以查看<a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/nginx-setup-intro.html">这篇教程</a></p>
-<h3 id="3-17docker"><a href="#3-17docker" class="headerlink" title="3.17docker"></a>3.17docker</h3><p>Docker用于作为k8s的container runtime</p>
+<h3 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h3><p>在部署的环境使用，可以查看<a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/nginx-setup-intro.html">这篇教程</a></p>
+<h3 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h3><p>Docker用于作为k8s的container runtime</p>
 <p>以及最终项目的打包部署</p>
-<h2 id="4-部署"><a href="#4-部署" class="headerlink" title="4.部署"></a>4.部署</h2><p>可以参考一些文章。<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_52030824/article/details/127982206">vue+springboot docker部署</a></p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>可以参考一些文章。<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_52030824/article/details/127982206">vue+springboot docker部署</a></p>
 <p>基本步骤：</p>
 <p>前端vue 使用npm run build，得到打包后的文件dist，将这个文件放在docker内部nginx的指定目录下。</p>
 <p>后端springboot需要使用maven打包成jar包。打包过程参考<a target="_blank" rel="noopener" href="https://www.cnblogs.com/sanjay/p/11828081.html">教程</a></p>
@@ -1684,7 +1696,7 @@ private TrustManager[] trustManagers;
 </ul>
 </li>
 </ul>
-<h4 id="实操步骤"><a href="#实操步骤" class="headerlink" title="实操步骤"></a>实操步骤</h4><ol>
+<h3 id="实操步骤"><a href="#实操步骤" class="headerlink" title="实操步骤"></a>实操步骤</h3><ol>
 <li><p>后端配置好端口后使用maven的package命令打包，得到jar包</p>
 <ol>
 <li>修改端口，MySQL的url：把localhost修改成服务器ip</li>

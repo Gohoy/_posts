@@ -7,7 +7,7 @@ tag:
 
 # K8S-WEB项目文档
 
-## 0.需要了解的前置术语
+## 需要了解的前置术语
 
 * 前端：进行数据渲染和展示的部分。通常使用HTML CSS JavaScript实现
 * 后端：对数据进行增删改查，提供服务的部分
@@ -35,9 +35,9 @@ tag:
 * Kubernetes
 * Kubevirt
 
-## 1.后端
+## 后端
 
-### 1.1.整体代码包类型解读
+### 整体代码包类型解读
 
 <img src="http://gohoy.top/i/2023/08/04/p6aqbg-1.png" alt="image-20230804152221174" style="zoom:80%;" />
 
@@ -58,7 +58,7 @@ tag:
   * k8s-user.sql：sql表文件，与项目逻辑无关。
 * pom.xml：图中没有展示，这个文件是maven管理工具的配置文件，使用maven来控制依赖版本
 
-### 1.2.后端代码的api框架
+### 后端代码的api框架
 
 <img src="http://gohoy.top/i/2023/08/01/qoznsh-1.png" alt="系统结构功能图"  />
 
@@ -66,7 +66,7 @@ tag:
 
 ![image-20230804163908243](http://gohoy.top/i/2023/08/04/r3vqkm-1.png)
 
-### 1.3.数据库表
+### 数据库表
 
 数据库名称为：k8s
 
@@ -81,11 +81,11 @@ tag:
 | default      |      |                  |          | 0                       | null                      | 1                           | 0                      | null                   | 1                          | 0            |                     | null         |
 | autoIncrease | yes  |                  |          |                         |                           |                             |                        |                        |                            |              |                     |              |
 
-### 1.4.处理请求的逻辑
+### 处理请求的逻辑
 
 <img src="http://gohoy.top/i/2023/08/04/r5tcvh-1.png" alt="image-20230804152329594" style="zoom: 67%;" />
 
-#### 1.4.1tomcat服务器如何把请求转发到对应的controller方法？
+#### tomcat服务器如何把请求转发到对应的controller方法？
 
 接下来以用户登录方法为例
 
@@ -137,7 +137,7 @@ tag:
 
     * 接下来就是对user对象进行操作。
 
-#### 1.4.2controller具体逻辑的实现流程
+#### controller具体逻辑的实现流程
 
 以根据用户名获取用户数据这个api为例
 
@@ -153,17 +153,17 @@ tag:
   * ![](http://gohoy.top/i/2023/08/04/r9dp3f-1.png)
   * 这里面什么都没写，因为它继承了BaseMapper类，BaseMapper是MyBatisPlus框架实现的类，其中已经有最基本的对数据库进行增删改查的方法。
 
-##### 4.2.1 为什么要有这么多流程呢？直接把在controller文件中调用UserDao实现查询可以吗
+##### 为什么要有这么多流程呢？直接把在controller文件中调用UserDao实现查询可以吗
 
 分出controller service dao三层是后端开发的规范，在比较复杂的后端逻辑时可以理清思路，便于实现。
 
 所以简单的业务逻辑是可以直接在controller实现的。
 
-### 1.5 controller文件中实现api
+###  controller文件中实现api
 
-#### 1.5.1 一般的api，简单的增删改查
+####  一般的api，简单的增删改查
 
-##### 1.5.1.1`AdminPodController`：管理员Pod管理api
+##### `AdminPodController`：管理员Pod管理api
 
 * `/getAllPods/{type})`：获取所有pod信息
   * 使用kubernetesClient获取所有pod，将pod进行筛选，除去系统pod
@@ -173,27 +173,27 @@ tag:
 * `/setVMDefaultResource/`：与`/setCtrDefaultResource/`同理
 * `/getDefaultConfig/{type}`：根据字符串type获取不同的configMap
 
-##### 1.5.1.2`AdminUserController`：管理员用户管理api：
+##### `AdminUserController`：管理员用户管理api：
 
 * `/getUserByName/{username}`：通过用户名从数据库查询该用户的信息
 * `/getUsersByPage/{pageNum}/{pageSize}`：分页获取全部用户，使用了MyBatisPlus内置的分页方法。
 * `/updateUser`：更新用户信息
 * `/deleteUser/{id}`：通过id删除用户
 
-##### 1.5.1.3`PodController`：用户对pod的功能需求
+##### `PodController`：用户对pod的功能需求
 
 * `/selectPodByUserName/{username}`：通过用户名查询该用户所拥有的pod。因为pod创建的时候的名称都是username-type-job-random的形式，这里通过把所有的pod导出，遍历筛选的方法获得目标。
 * `/deletePod/{podName}`：通过pod名称来删除pod
 
-##### 1.5.1.4`UserController`：用户登录注册和其他对自己信息的管理
+##### `UserController`：用户登录注册和其他对自己信息的管理
 
 * `/register`：传入用户名，密码，只要数据库中没有这个用户就进行插入。
 * `/getUserDTO/{username}`：通过用户名，获取除了密码以外的所有信息。
 * `/getIndex`：前端主页显示的内容，通过此处获取index.md进行展示
 
-#### 1.5.2 较为复杂的api逻辑分析
+####  较为复杂的api逻辑分析
 
-##### 1.5.2.1 `PodController`：用户对pod的功能需求
+#####  `PodController`：用户对pod的功能需求
 
 * `/createCtr/{username}`：用户开启一个pod
   * 使用username获取用户信息，判断用户是否还有可用的pod数量。
@@ -202,7 +202,7 @@ tag:
   * 创建成功之后将clusterIp，sshPort，rootPassword返回。
 * `/createVm/{username}`：TODO
 
-##### 1.5.2.2`UserController`：用户登录注册和其他对自己信息的管理
+##### `UserController`：用户登录注册和其他对自己信息的管理
 
 * `/login`：用户登录，传入username和password
   * 首先验证用户名密码是否正确
@@ -210,33 +210,33 @@ tag:
   * 然后纠正用户可用的pod数量，因为当pod的job自然结束后，没有钩子函数能够通知我们去修改用户可用pod数量。所以这里在登录的时候进行扫描纠正。
   * 返回给前端token，前端在访问其他api的时候都需要在cookie中携带username和token
 
-### 1.6. kubevirt相关api实现的步骤
+###  kubevirt相关api实现的步骤
 
-#### ~~1.6.1 走通使用kubevirt进行创建虚拟机的过程，并选取一个最终实现的方案~~
+#### ~~ 走通使用kubevirt进行创建虚拟机的过程，并选取一个最终实现的方案~~
 
-##### ~~1.6.1.1将虚拟机镜像传给pvc，然后使用这个pvc创建一个vm（已完成）~~
+##### ~~将虚拟机镜像传给pvc，然后使用这个pvc创建一个vm（已完成）~~
 
-##### ~~1.6.1.2使用数据类型datavolume来创建虚拟机~~
+##### ~~使用数据类型datavolume来创建虚拟机~~
 
 ~~优势：可以通过一个模板来clone虚拟机。通过快照来保存虚拟机的数据~~
 
 ~~但是从来没有用过这种方法。可行性待验证~~
 
-#### ~~1.6.2 通过kubevirt提供的api，实现这个方案~~
+#### ~~ 通过kubevirt提供的api，实现这个方案~~
 
-##### ~~1.6.2.1 首先要对请求进行鉴权配置（已完成）~~
+##### ~~ 首先要对请求进行鉴权配置（已完成）~~
 
 ~~k8s默认api需要进行证书验证。所以如果直接访问api地址会被拦截。~~
 
 ~~我仿照kubernetesClient进行了证书验证的操作。此项已完成~~
 
-##### ~~1.6.2.2 验证将pod配置序列化为请求体正常发送请求的方法~~
+##### ~~ 验证将pod配置序列化为请求体正常发送请求的方法~~
 
 ~~因为在api中，pod的配置全部都被放在请求体中，而Java存储这些配置的方法是生成一个类。~~
 
 ~~这里需要去验证如何把类中的数据正确传递给k8s~~
 
-#### 1.6.3
+#### kubevirt最终方案
 
 使用脚本监听文件修改，通过监听文件修改来执行kubectl命令来进行虚拟机操作（当前使用的方案）
 
@@ -296,9 +296,9 @@ inotifywait -m -e create -e moved_to "$target_directory" |
 
 
 
-## 2.前端
+## 前端
 
-### 2.1前端代码包
+### 前端代码包
 
 ![image-20230814160921521](http://gohoy.top/i/2023/08/14/qm6mnh-1.png)
 
@@ -312,7 +312,7 @@ inotifywait -m -e create -e moved_to "$target_directory" |
   * App.vue：整个项目的入口
   * main.js：整个项目的配置文件
 
-### 2.2前端文件的架构
+### 前端文件的架构
 
 <img src="http://gohoy.top/i/2023/08/14/qqtpor-1.png" alt="image-20230814161708391" style="zoom:67%;" />
 
@@ -320,9 +320,9 @@ inotifywait -m -e create -e moved_to "$target_directory" |
 
 App.vue中的`   <router-view></router-view>`是这个页面被渲染的地方。
 
-## 3.框架的使用说明
+## 框架的使用说明
 
-### 3.1NPM
+### NPM
 
 NodeJs提供的包管理工具
 
@@ -334,13 +334,13 @@ npm install 按照npm的配置文件package.json来安装所有依赖
 
 npm run <option> 将项目运行，一般会有 serve 和build 选项。前者用于开发。后者将项目打包，用于部署
 
-### 3.2Vue
+### Vue
 
 vue ui：开启一个webCli来进行vue项目管理
 
 vue init <packageName> 创建一个vue项目（可以在web页面进行）
 
-### 3.3VueRouter
+### VueRouter
 
 ```sh
 npm install vue-router
@@ -382,7 +382,7 @@ app.use(router).mount('#app')
 
 这样之后，就可以访问项目地址/index进入页面IndexView
 
-### 3.4axios
+### axios
 
 ```sh
 npm insatll axios
@@ -440,11 +440,11 @@ app.use(router).mount('#app')
 
 这里使用post请求访问http://localhost:8080/user/login，并在requestBody中携带了用户登录信息。并将得到的返回值放在response中。之后进行操作
 
-### 3.5ElementPlus
+### ElementPlus
 
 [查看官方使用文档](https://element-plus.org/zh-CN/guide/quickstart.html#%E7%94%A8%E6%B3%95)
 
-### 3.6Maven
+### Maven
 
 包配置文件在项目根目录的pom.xml中
 
@@ -511,7 +511,7 @@ maven换源：
 
 在mirrors标签中加入这些即可
 
-### 3.7SpringBoot
+### SpringBoot
 
 Maven包设置：
 
@@ -560,7 +560,7 @@ public class K8sWebMainApplication {
 
 配置文件默认在项目根目录/resources/application.yaml（或者application.application）
 
-### 3.8MyBatisPlus
+### MyBatisPlus
 
 Maven包引用
 
@@ -609,7 +609,7 @@ public class UserServiceImpl extends ServiceImpl<UserDao , User> implements User
 
 ```
 
-### 3.9 MySQL
+### MySQL
 
 这里准备使用docker来启动
 
@@ -644,7 +644,7 @@ spring:
 
 在这里配置之后，MyBatisPlus的curd操作就能够找到数据源
 
-### 3.10SpringCloudKubernetes
+### SpringCloudKubernetes
 
 Maven 配置
 
@@ -703,7 +703,7 @@ public class KubernetesConfig {
 
 这段代码使用kubernetesClient创建了一个namespace config
 
-### 3.11 JWT
+### JWT
 
 用来生成token，来进行鉴权
 
@@ -790,7 +790,7 @@ public class JWTUtils {
 
 在登录成功后生成一个token，在接收到前端的请求时，使用token进行鉴权。
 
-### 3.12 Lombok
+### Lombok
 
 用来快速生成类的get set方法，快速标记链式编程等
 
@@ -834,7 +834,7 @@ public class User  extends UserDTO{
 
 自动为下面的属性id 和password生成get set方法
 
-### 3.13Swagger
+### Swagger
 
 Maven配置
 
@@ -894,7 +894,7 @@ public class AdminUserController {
 
 然后在项目运行的url，例如：localhost:8080/swagger-ui.html可以查看这些api，并且可以进行测试
 
-### 3.14Interceptor
+### Interceptor
 
 Maven配置
 
@@ -973,7 +973,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
 
 这里exludePathPatterns是排除的路径，防止登录注册和swagger页面不能进入。
 
-### 3.15HttpClient（当前项目弃用）
+### HttpClient（当前项目弃用）
 
 用来发送http请求。
 
@@ -1228,17 +1228,17 @@ private TrustManager[] trustManagers;
 
 3.实现kubevirt的方案：使用脚本监听文件修改来执行sh命令。
 
-### 3.16Nginx
+### Nginx
 
 在部署的环境使用，可以查看[这篇教程](https://www.runoob.com/w3cnote/nginx-setup-intro.html)
 
-### 3.17docker
+### docker
 
 Docker用于作为k8s的container runtime
 
 以及最终项目的打包部署
 
-## 4.部署
+## 部署
 
 可以参考一些文章。[vue+springboot docker部署](https://blog.csdn.net/qq_52030824/article/details/127982206)
 
@@ -1258,7 +1258,7 @@ Docker用于作为k8s的container runtime
 * docker Nginx环境
   * 将前端打包文件放入此容器，然后编写nginx配置文件。
 
-#### 实操步骤
+### 实操步骤
 
 1. 后端配置好端口后使用maven的package命令打包，得到jar包
 
